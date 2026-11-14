@@ -1,0 +1,52 @@
+/* Final override layer: one palette, one type scale, one button/card style. Loaded last; delete this file to get the old look back. */
+:root{--bg:#0b111c;--side:#0f1623;--surface:#151e2e;--surface2:#1a2539;--line:#26344a;--text:#e9eff9;--mute:#a3b3c9;--accent:#7cc4ee;--accent-bg:#1d3a56;--r:12px}
+body{font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.app{grid-template-columns:clamp(380px,31vw,460px) 1fr}
+.side{background:var(--side);border-right:1px solid var(--line)}
+/* header: logo and advanced toggle on one row, subtitle quiet */
+.head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:16px 18px 10px;border:0}
+.logo{font-size:19px}.subtitle{order:3;flex-basis:100%;font-size:12px;color:var(--mute);margin:0}
+.nv50-advanced-toggle{font-size:12px!important;padding:6px 11px!important;border-radius:999px!important;background:transparent!important;border:1px solid var(--line)!important;color:var(--mute)!important}
+/* tabs: one scrolling row, underline-style active */
+.tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;gap:0!important;padding:0 10px!important;border-bottom:1px solid var(--line)!important;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto!important;min-width:0!important;min-height:0!important;white-space:nowrap!important;padding:11px 8px!important;font-size:13px!important;background:transparent!important;border:0!important;border-bottom:2px solid transparent!important;border-radius:0!important;color:var(--mute)!important}
+.tabs button:hover{color:var(--text)!important}
+.tabs button.active{color:#fff!important;border-bottom-color:var(--accent)!important;background:transparent!important;font-weight:700}
+.scroll{padding:16px 18px 28px;scrollbar-width:thin;scrollbar-color:#2c3b52 transparent}
+/* type: nothing below 12.5px */
+.hint,.small,.panel p,.academy-card p,.academy-hero p,.nv50-intro p{font-size:13.5px!important;line-height:1.75!important;color:var(--mute)}
+.label{font-size:13px;font-weight:600;color:var(--text);margin:16px 0 8px}
+.academy-stat div{font-size:12px!important}
+/* cards: flat, one border, no gradients */
+.panel,.academy-card,.academy-hero{background:var(--surface)!important;border:1px solid var(--line)!important;border-radius:var(--r)!important;box-shadow:none!important}
+.academy-hero{padding:18px}
+.academy-card,.panel{padding:16px;margin:0 0 12px}
+.academy-card h3,.panel h2{font-size:16px;margin:0 0 8px;color:var(--text)}
+.academy-stat div{background:var(--surface2)!important;border:1px solid var(--line)!important;border-radius:10px}
+.academy-stat b{color:var(--accent)!important;font-size:22px!important}
+/* buttons: one look */
+.seg button,.list button,.actions button,.academy-card button,.academy-action,.academy-filterbar button{background:var(--surface2);border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:13px;padding:9px 12px;transition:background .15s,border-color .15s}
+.seg button:hover,.list button:hover,.actions button:hover,.academy-card button:hover,.academy-action:hover,.academy-filterbar button:hover{background:#22304a;border-color:#3a4d6b}
+.seg button.active,.list button.active,.academy-filterbar button.active,.academy-term-list button.active{background:var(--accent-bg);border-color:var(--accent);color:#fff}
+.academy-action,#academy-start-quiz,#academy-next{background:var(--accent-bg);border-color:var(--accent)}
+button:disabled{opacity:.45;cursor:not-allowed}
+/* quiz: bigger tap targets */
+.academy-option{min-height:48px;font-size:14px!important;background:var(--surface2)!important;border:1px solid var(--line)!important;border-radius:10px!important}
+.academy-option:hover:not(:disabled){border-color:var(--accent)!important}
+.academy-quiz-question{font-size:16px;font-weight:600;line-height:1.7;margin:10px 0 14px}
+.academy-progress{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin:8px 0 12px}.academy-progress>div{height:100%;background:var(--accent);border-radius:99px}
+/* disclaimers stay but quieter */
+.nv51-status{font-size:12.5px;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:4px 0 12px;margin-bottom:12px;color:var(--mute)}
+.foot{font-size:12px}.notice{font-size:12px}
+/* stage chrome */
+.topline strong{font-size:15px}.toolbar button{background:rgba(15,22,35,.85);border:1px solid var(--line);backdrop-filter:blur(6px)}
+:focus-visible{outline:2px solid var(--accent)!important;outline-offset:2px}
+@media(max-width:800px){.app{display:flex}.head{padding:8px 14px}.subtitle{display:none}.tabs button{padding:10px 11px!important}.scroll{padding:12px 14px 24px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* advanced mode shows 13 tabs: wrap them instead of hiding them in a scroll row */
+body.nv50-advanced .tabs{flex-wrap:wrap!important;overflow:visible;padding:4px 10px 0!important}
+/* hidden tabs: raise tiny text to 12px (dense diagrams keep layout) */
+.scroll small,.scroll .academy-compact,.scroll .pt-kicker,.scroll .section-kicker,.scroll .pt-notice,.scroll .nv21-badge,.scroll .nv30-chip,.scroll .nv32-tag,.scroll .academy-pill,.scroll .nv21-warning,.scroll .nv29-disclaimer,.scroll .nv53-route-notice,.scroll p.en{font-size:12px!important}
+@media(max-width:800px){body.nv50-advanced .tabs{flex-wrap:nowrap!important;overflow-x:auto;padding:0 10px!important}.nv50-intro{display:none}}
+.logo::after{content:"BETA";margin-left:8px;padding:2px 7px;border:1px solid var(--accent);border-radius:99px;font-size:10px;letter-spacing:.08em;color:var(--accent);vertical-align:middle}

@@ -1,0 +1,692 @@
+{
+  "version": "RC29",
+  "method": "Trimesh GLB geometry topology audit; original GLB unmodified",
+  "limitations": [
+    "닫힌 표면은 해부학적 정확성을 보증하지 않습니다.",
+    "메시의 연결 상태는 실제 신체 조직의 연결 상태와 다를 수 있습니다.",
+    "모델 좌표·방향·형태의 의학적 검수는 아직 하지 않았습니다.",
+    "원본 모델의 출처·사용 허락 확인 필요."
+  ],
+  "models": [
+    {
+      "label": "뇌",
+      "file": "brain_mni.glb",
+      "sha256": "58cdd92c64992c3e9a3bc95f189e6d16f97adbf6097872fc9c90319955c865e7",
+      "bytes": 1958684,
+      "parts": [
+        {
+          "name": "amygdala",
+          "vertices": 860,
+          "triangles": 1716,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.49573,
+              -0.6906,
+              0.14966
+            ],
+            [
+              -0.10445,
+              -0.33105,
+              0.42206
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "brainstem",
+          "vertices": 3678,
+          "triangles": 7352,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71447,
+              -1.36238,
+              -0.6628
+            ],
+            [
+              -0.36507,
+              -0.25321,
+              0.18044
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "cerebellum_cut",
+          "vertices": 6295,
+          "triangles": 12590,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71454,
+              -1.33127,
+              -1.53067
+            ],
+            [
+              0.45599,
+              0.02534,
+              -0.15692
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "cingulate",
+          "vertices": 6558,
+          "triangles": 13112,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71446,
+              -0.32957,
+              -0.7606
+            ],
+            [
+              -0.3939,
+              0.98701,
+              1.41332
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "corpus_callosum",
+          "vertices": 3256,
+          "triangles": 6508,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71447,
+              -0.16009,
+              -0.51544
+            ],
+            [
+              -0.42445,
+              0.54788,
+              1.08528
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "frontal",
+          "vertices": 10558,
+          "triangles": 18747,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 21,
+          "boundaryEdges": 2365,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71564,
+              -0.70925,
+              -0.53724
+            ],
+            [
+              0.63716,
+              1.52388,
+              1.8055
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "hippocampus",
+          "vertices": 2239,
+          "triangles": 4474,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.5261,
+              -0.69059,
+              -0.49069
+            ],
+            [
+              0.05462,
+              0.10887,
+              0.30098
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "insula",
+          "vertices": 4210,
+          "triangles": 8416,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.25726,
+              -0.53079,
+              -0.30386
+            ],
+            [
+              0.22784,
+              0.34793,
+              0.97602
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "occipital",
+          "vertices": 3742,
+          "triangles": 6262,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 15,
+          "boundaryEdges": 1200,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.7149,
+              -0.52505,
+              -1.80552
+            ],
+            [
+              0.4929,
+              0.89499,
+              0.04354
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "parietal",
+          "vertices": 5811,
+          "triangles": 10120,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 10,
+          "boundaryEdges": 1494,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.71505,
+              -0.14109,
+              -1.411
+            ],
+            [
+              0.6749,
+              1.52405,
+              0.44058
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "temporal",
+          "vertices": 6123,
+          "triangles": 10751,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 19,
+          "boundaryEdges": 1491,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.60074,
+              -1.12784,
+              -1.44109
+            ],
+            [
+              0.71439,
+              0.37283,
+              0.88264
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "thalamus",
+          "vertices": 1879,
+          "triangles": 3758,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.70423,
+              -0.30709,
+              -0.36024
+            ],
+            [
+              -0.16604,
+              0.24886,
+              0.33308
+            ]
+          ],
+          "reviewNeeded": false
+        }
+      ],
+      "reviewParts": 4
+    },
+    {
+      "label": "인체",
+      "file": "body_mni.glb",
+      "sha256": "1c1cc2afa61779d354850fce2937c28a13c50cba78aaddb26bdd7a42c761158b",
+      "bytes": 4710900,
+      "parts": [
+        {
+          "name": "mesh_biceps_L",
+          "vertices": 2782,
+          "triangles": 3282,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 229,
+          "boundaryEdges": 1922,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              2.0056,
+              -10.9241,
+              -0.3426
+            ],
+            [
+              3.898,
+              -4.0171,
+              0.4871
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_biceps_R",
+          "vertices": 2792,
+          "triangles": 3282,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 233,
+          "boundaryEdges": 1932,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -5.2964,
+              -10.9241,
+              -0.3426
+            ],
+            [
+              -3.4039,
+              -4.0171,
+              0.4871
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_bones",
+          "vertices": 34429,
+          "triangles": 67190,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 121,
+          "boundaryEdges": 1700,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -6.2899,
+              -14.7052,
+              -1.8004
+            ],
+            [
+              4.8837,
+              -3.6967,
+              1.2428
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_cord",
+          "vertices": 1200,
+          "triangles": 2360,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 40,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.8325,
+              -3.663,
+              -0.6545
+            ],
+            [
+              -0.5795,
+              -1.493,
+              -0.4675
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_muscles_L",
+          "vertices": 45772,
+          "triangles": 57692,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 2985,
+          "boundaryEdges": 30102,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              0.9575,
+              -17.4948,
+              -1.6442
+            ],
+            [
+              5.5818,
+              -3.6977,
+              2.0388
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_muscles_R",
+          "vertices": 45741,
+          "triangles": 57692,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 2979,
+          "boundaryEdges": 30056,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -6.9802,
+              -17.4948,
+              -1.6442
+            ],
+            [
+              -2.3559,
+              -3.6977,
+              2.0388
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "mesh_vertebrae",
+          "vertices": 11204,
+          "triangles": 16912,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 142,
+          "boundaryEdges": 6042,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.5265,
+              -3.8611,
+              -1.357
+            ],
+            [
+              0.1054,
+              -1.1769,
+              0.1347
+            ]
+          ],
+          "reviewNeeded": true
+        }
+      ],
+      "reviewParts": 7
+    },
+    {
+      "label": "심장",
+      "file": "heart_mni.glb",
+      "sha256": "c1b51a5ed50ad8aac4be13da13b66b93e2e958fb981759ebf71f1014d30e393a",
+      "bytes": 3533696,
+      "parts": [
+        {
+          "name": "heart",
+          "vertices": 57798,
+          "triangles": 99040,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 690,
+          "boundaryEdges": 17600,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.42525,
+              -7.30714,
+              -0.29533
+            ],
+            [
+              0.88865,
+              -5.21554,
+              1.8316
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "cardiacvein",
+          "vertices": 12380,
+          "triangles": 17616,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 289,
+          "boundaryEdges": 7410,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.11598,
+              -7.31514,
+              -0.06028
+            ],
+            [
+              0.84964,
+              -5.73634,
+              1.83366
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "aorta",
+          "vertices": 5416,
+          "triangles": 10188,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 15,
+          "boundaryEdges": 670,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.83578,
+              -11.86996,
+              -0.79702
+            ],
+            [
+              -0.00242,
+              -4.46374,
+              1.05004
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "arteries",
+          "vertices": 1343,
+          "triangles": 2414,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 12,
+          "boundaryEdges": 290,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -2.34269,
+              -4.71914,
+              0.03822
+            ],
+            [
+              1.03175,
+              -3.33194,
+              0.6944
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "pulm",
+          "vertices": 871,
+          "triangles": 1302,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 31,
+          "boundaryEdges": 390,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -0.47368,
+              -5.67554,
+              0.63158
+            ],
+            [
+              0.14232,
+              -4.93334,
+              1.47854
+            ]
+          ],
+          "reviewNeeded": true
+        },
+        {
+          "name": "veins",
+          "vertices": 2079,
+          "triangles": 3678,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 25,
+          "boundaryEdges": 460,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.23569,
+              -11.7877,
+              0.3723
+            ],
+            [
+              -0.74035,
+              -4.60934,
+              0.87706
+            ]
+          ],
+          "reviewNeeded": true
+        }
+      ],
+      "reviewParts": 6
+    },
+    {
+      "label": "폐",
+      "file": "lungs_mni.glb",
+      "sha256": "5cf1d53b9b6eed0766f6e8003d11908c73744d4f342c4d3d844fb2f17d78a746",
+      "bytes": 1702228,
+      "parts": [
+        {
+          "name": "GLTF",
+          "vertices": 254,
+          "triangles": 504,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.07805,
+              -3.79254,
+              -1.44613
+            ],
+            [
+              1.34945,
+              2.87607,
+              1.61123
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "GLTF_1",
+          "vertices": 254,
+          "triangles": 504,
+          "watertight": true,
+          "windingConsistent": true,
+          "connectedComponents": 1,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -1.34945,
+              -3.79254,
+              -1.44613
+            ],
+            [
+              1.07805,
+              2.87607,
+              1.61123
+            ]
+          ],
+          "reviewNeeded": false
+        },
+        {
+          "name": "GLTF_2",
+          "vertices": 35527,
+          "triangles": 68522,
+          "watertight": false,
+          "windingConsistent": true,
+          "connectedComponents": 154,
+          "boundaryEdges": 2608,
+          "nonManifoldEdges": 0,
+          "bounds": [
+            [
+              -2.31798,
+              -2.56368,
+              -1.56286
+            ],
+            [
+              2.54587,
+              1.57089,
+              2.02529
+            ]
+          ],
+          "reviewNeeded": true
+        }
+      ],
+      "reviewParts": 1
+    }
+  ]
+}

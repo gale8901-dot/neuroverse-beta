@@ -1,0 +1,8 @@
+/* RC5 계통별 전공지도 */
+.nv-system-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.nv-system-btn{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:3px;background:#192d45;border:1px solid #38516a;color:#e1ecfa;padding:11px;border-radius:11px;cursor:pointer;min-height:82px}
+.nv-system-btn.active{background:#285879;border-color:#83cce6}.nv-system-btn strong{font-size:13px}.nv-system-btn small{font-size:10px;color:#b6cee0}.nv-system-btn span{font-size:10px;color:#8fcfbc;margin-top:auto}
+.nv-sys-focus h3 small{font-size:11px;color:#91b7d0;font-weight:400}.nv-sys-focus p{line-height:1.7;color:#d4e2ef;font-size:13px}
+.nv-system-filters{display:grid;grid-template-columns:1fr 1.4fr;gap:8px;margin:10px 0}.nv-system-filters label{font-size:11px;color:#adc5db}.nv-system-filters select,.nv-system-filters input{width:100%;background:#0d1c30;border:1px solid #52748c;border-radius:8px;color:#e7f2ff;padding:8px;margin-top:4px}
+.nv-sys-list{display:grid;grid-template-columns:1fr 1fr;gap:7px}.nv-sys-lesson{display:flex;flex-direction:column;gap:5px;text-align:left;background:#223850;border:1px solid #425e77;border-radius:10px;color:#e8f5ff;cursor:pointer;padding:10px}.nv-sys-lesson b{font-size:12px}.nv-sys-lesson small{font-size:10px;color:#b3c7dd;line-height:1.45}
+@media(max-width:470px){.nv-system-filters{grid-template-columns:1fr}.nv-sys-list{grid-template-columns:1fr}}

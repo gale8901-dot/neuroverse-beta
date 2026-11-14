@@ -1,0 +1,150 @@
+{
+  "version": "RC5",
+  "lastUpdated": "2026-11-12",
+  "disclaimer": "계통별 분류는 학습 탐색용입니다. 교육과정 전체 이수/공식 교수검수/실제 임상 근활성량 검증을 의미하지 않습니다.",
+  "systems": [
+    {
+      "id": "msk",
+      "name": "근골격계",
+      "en": "Musculoskeletal system",
+      "intro": "뼈·관절·근육이 힘을 만들고 움직임을 수행하는 계통",
+      "lessons": [
+        "pt-01",
+        "pt-02",
+        "pt-03",
+        "pt-05",
+        "pt-06",
+        "pt-07",
+        "pt-11",
+        "pt-12",
+        "pt-13",
+        "pt-14",
+        "pt-20",
+        "pt-24",
+        "pt-25",
+        "pt-26"
+      ],
+      "previewTab": "biomech",
+      "limitation": "현재 동작 시뮬레이션은 교육용 모식입니다. 실제 근활성량·개별 근육 부착부의 검증을 뜻하지 않습니다."
+    },
+    {
+      "id": "neuro",
+      "name": "신경계",
+      "en": "Nervous system",
+      "intro": "뇌·척수·신경의 신호 전달과 운동·감각의 조절",
+      "lessons": [
+        "pt-04",
+        "pt-09",
+        "pt-10",
+        "pt-15",
+        "pt-16",
+        "pt-21",
+        "pt-22",
+        "pt-27",
+        "pt-28"
+      ],
+      "previewTab": "pathways",
+      "limitation": "일부 신경섬유 데이터는 실영상 기반이지만 모든 연결점과 가지가 영상으로 검증된 것은 아닙니다."
+    },
+    {
+      "id": "cardio",
+      "name": "심혈관계",
+      "en": "Cardiovascular system",
+      "intro": "심장과 혈관을 통해 혈액을 순환시키는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "심장 3D 모델은 있지만, 학년별 학습 카드와 생리·평가 콘텐츠는 아직 준비되지 않았습니다."
+    },
+    {
+      "id": "resp",
+      "name": "호흡계",
+      "en": "Respiratory system",
+      "intro": "공기를 들이쉬고 내쉬며 산소와 이산화탄소를 교환하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "폐 3D 모델은 있지만 호흡역학·폐기능검사의 단계별 학습 콘텐츠는 아직 준비되지 않았습니다."
+    },
+    {
+      "id": "sensory",
+      "name": "감각계",
+      "en": "Sensory systems",
+      "intro": "시각·청각·몸 감각 등의 정보를 받아들이고 처리하는 계통",
+      "lessons": [],
+      "previewTab": "pathways",
+      "limitation": "시각·청각·체성감각 3D 경로는 기존 탐색에 포함되지만 계통별 심화 학습 카드는 아직 부족합니다."
+    },
+    {
+      "id": "skin",
+      "name": "피부계",
+      "en": "Integumentary system",
+      "intro": "피부와 부속기관이 신체를 보호하고 감각·체온조절에 관여하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "세부 피부층·감각수용기·상처 재활 등은 미구현입니다."
+    },
+    {
+      "id": "lymph",
+      "name": "림프·면역계",
+      "en": "Lymphatic and immune systems",
+      "intro": "체액의 회수와 면역 방어를 담당하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "림프관·림프절 3D 및 림프부종 관리 단원은 미구현입니다."
+    },
+    {
+      "id": "endocrine",
+      "name": "내분비계",
+      "en": "Endocrine system",
+      "intro": "호르몬으로 신체 기능을 조절하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "호르몬 기관별 상세 해부학·생리학 단원은 미구현입니다."
+    },
+    {
+      "id": "digest",
+      "name": "소화계",
+      "en": "Digestive system",
+      "intro": "음식을 소화하고 영양분을 흡수하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "소화기관 고정밀 3D 모델과 전용 콘텐츠는 미구현입니다."
+    },
+    {
+      "id": "urinary",
+      "name": "비뇨계",
+      "en": "Urinary system",
+      "intro": "소변을 만들고 배출하며 체액 균형을 조절하는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "비뇨기계 상세 구조와 골반저 재활 단원은 미구현입니다."
+    },
+    {
+      "id": "repro",
+      "name": "생식계",
+      "en": "Reproductive system",
+      "intro": "생식 관련 기관과 기능을 다루는 계통",
+      "lessons": [],
+      "previewTab": "systems",
+      "limitation": "생식기관 고정밀 3D 및 관련 재활 단원은 미구현입니다."
+    },
+    {
+      "id": "rehab",
+      "name": "평가·재활 통합",
+      "en": "PT evaluation and rehabilitation",
+      "intro": "계통별 지식을 평가·활동·참여·중재에 연결하는 전공 학습",
+      "lessons": [
+        "pt-08",
+        "pt-17",
+        "pt-18",
+        "pt-19",
+        "pt-23",
+        "pt-29",
+        "pt-30",
+        "pt-31",
+        "pt-32"
+      ],
+      "previewTab": "academy",
+      "limitation": "기초 개념 위주이며 실제 임상 의사결정 지원 도구나 충분한 4년 과정 강의집은 아닙니다."
+    }
+  ]
+}

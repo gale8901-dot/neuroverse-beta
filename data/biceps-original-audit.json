@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "model": "models/brain/body_mni.glb",
+  "modelSha256": "1c1cc2afa61779d354850fce2937c28a13c50cba78aaddb26bdd7a42c761158b",
+  "source": "원본 GLB 직접 분석(trimesh); 측정 단위는 모델 좌표이며 cm/mm가 아님",
+  "clinicallyValidated": false,
+  "atlasRegistered": false,
+  "expertReviewed": false,
+  "notes": [
+    "파일 부품의 외곽 상자 크기·중심점만 측정했다. 실제 근육의 해부학적 크기, 기시·정지, 좌우 방향을 검증한 것이 아니다.",
+    "닫힌 표면(watertight) 여부는 메쉬 구조 특징이지 해부학적 정확성의 합격/불합격 판정이 아니다."
+  ],
+  "parts": [
+    {
+      "name": "mesh_biceps_L",
+      "side": "L",
+      "vertices": 2782,
+      "triangles": 3282,
+      "bounds": {
+        "min": [
+          2.0056,
+          -10.9241,
+          -0.3426
+        ],
+        "max": [
+          3.898,
+          -4.0171,
+          0.4871
+        ]
+      },
+      "center": [
+        2.9518,
+        -7.4706,
+        0.07225
+      ],
+      "dimensions": [
+        1.8924,
+        6.907,
+        0.8297
+      ],
+      "watertight": false,
+      "zero_area_faces": 4
+    },
+    {
+      "name": "mesh_biceps_R",
+      "side": "R",
+      "vertices": 2792,
+      "triangles": 3282,
+      "bounds": {
+        "min": [
+          -5.2964,
+          -10.9241,
+          -0.3426
+        ],
+        "max": [
+          -3.4039,
+          -4.0171,
+          0.4871
+        ]
+      },
+      "center": [
+        -4.35015,
+        -7.4706,
+        0.07225
+      ],
+      "dimensions": [
+        1.8925,
+        6.907,
+        0.8297
+      ],
+      "watertight": false,
+      "zero_area_faces": 6
+    }
+  ],
+  "comparison": {
+    "sameTriangleCount": true,
+    "sameVertexCount": false,
+    "centerSeparationModelUnits": 7.30195,
+    "identicalYBounds": true
+  }
+}

@@ -1,0 +1,131 @@
+#regions button[hidden], #nv54-region-empty[hidden], #nv54-route-review [hidden] { display: none !important; }
+body:not(.nv50-advanced) .tabs button[data-tab="pt-course"],
+body:not(.nv50-advanced) .tabs button[data-tab="quiz"] { display: block !important; }
+.nv54-compare, .nv54-route-card, #nv54-route-review, #nv54-fallback {
+  margin: 10px 0;
+  padding: 11px;
+  background: #142638;
+  border: 1px solid #385466;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.nv54-compare summary { cursor: pointer; color: #bdeaf0; font-weight: 700; }
+.nv54-compare table { width: 100%; margin-top: 8px; border-collapse: collapse; text-align: left; }
+.nv54-compare th, .nv54-compare td { padding: 5px 3px; border-bottom: 1px solid #3b5263; }
+.nv54-route-card dl { display: grid; grid-template-columns: auto 1fr; column-gap: 9px; margin: 0; }
+.nv54-route-card dt { color: #add0e2; }
+.nv54-route-card dd { margin: 0; }
+.nv54-route-card p, #nv54-route-review p { font-size: 12px; }
+.nv54-route-card a { color: #a8e7ef; }
+.nv54-flow { margin: 10px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; background: #0b1a26; border-radius: 8px; padding: 9px; }
+.nv54-flow-cross, .nv54-crossing small { color: #ffdb91 !important; }
+.nv54-crossing { border-left-color: #ffcb75 !important; }
+.nv54-controls { display: flex; flex-wrap: wrap; gap: 6px; }
+#nv54-route-study button, #nv54-route-review button, #nv54-fallback button {
+  padding: 5px 7px; min-height: 38px; text-align: left; background: #1b3549; border: 1px solid #527289; border-radius: 6px;
+}
+#nv54-route-study button[aria-pressed="true"], #nv54-route-review .nv54-correct { background: #235759; border-color: #a3e0d7; }
+#nv54-route-review h3 { font-size: 14px; margin: 0; }
+#nv54-route-review .nv54-feedback:empty { display: none; }
+#nv54-fallback { display: none; }
+.nv54-2d #nv54-fallback { display: grid; gap: 6px; }
+.nv54-2d #nv53-original-paths { display: none; }
+@media(max-width:850px) {
+  .nv54-2d .stage { display: none; }
+  .nv54-2d .side { flex: 1 !important; }
+}
+#bm-movements button[hidden] { display: none !important; }
+#nv54-joint-filter button {
+  min-height: 38px; padding: 5px 8px; border: 1px solid #527289; background: #1b3549; border-radius: 7px;
+}
+#nv54-joint-filter button[aria-pressed="true"] { background: #235759; border-color: #a3e0d7; }
+@media (min-width: 851px) {
+  .app:has(nav [data-tab="pathways"].active) { grid-template-columns: minmax(350px, 445px) minmax(0, 1fr) !important; }
+}
+.tabs button[data-tab="pathways"]:focus-visible,
+#nv54-route-study button:focus-visible, #nv54-route-review button:focus-visible,
+#nv54-joint-filter button:focus-visible { outline: 2px solid #9fe1ec; outline-offset: -2px; }
+
+/* 해부 개념도 */
+.nv54-route-diagram { display: block; width: 100%; max-width: 420px; margin: 7px auto 8px; background: #0b1a26; border-radius: 8px; }
+.nv54-route-diagram text { fill: #c6dce8; font-size: 10.5px; }
+.nv54-skin { fill: none; stroke: #3b566a; stroke-width: 1.5; }
+.nv54-brain { fill: #1d3347; stroke: #4f7088; }
+.nv54-deep { fill: #2a4a5e; stroke: #5b7f96; }
+.nv54-stem, .nv54-cord { fill: #24425a; stroke: #5b7f96; }
+.nv54-torso { fill: none; stroke: #33505f; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.nv54-route-diagram .nv54-region { fill: #6f8ea3; text-anchor: middle; font-size: 11px; }
+.nv54-route-diagram .nv54-foot { fill: #7f98a9; text-anchor: middle; font-size: 9.5px; }
+.nv54-diagram-line { fill: none; stroke: var(--c); stroke-opacity: .4; stroke-width: 5; stroke-linejoin: round; stroke-linecap: round; }
+.nv54-flow-line { fill: none; stroke: #fff; stroke-opacity: .9; stroke-width: 1.6; stroke-dasharray: 3 9; stroke-linejoin: round; animation: nv54-flow 1.1s linear infinite; }
+@keyframes nv54-flow { to { stroke-dashoffset: -12; } }
+.nv54-st { cursor: pointer; outline: none; }
+.nv54-st circle { fill: #0b1a26; stroke: var(--c); stroke-width: 2; }
+.nv54-route-diagram .nv54-num { fill: #e8f3f8; font-size: 9.5px; font-weight: 700; }
+.nv54-route-diagram .nv54-name { fill: #c6dce8; font-size: 10px; }
+.nv54-leader { stroke: #587388; stroke-dasharray: 2 3; }
+.nv54-st.on circle { fill: var(--c); } .nv54-st.on .nv54-num { fill: #0b1a26; }
+.nv54-route-diagram .nv54-st.on .nv54-name { fill: #fff; font-weight: 700; }
+.nv54-st:focus-visible circle { stroke: #fff; stroke-width: 3; }
+.nv54-dot { fill: #fff8da; stroke: var(--c); stroke-width: 2; transition: transform .8s ease; }
+.nv54-stepcard { min-height: 4.6em; padding: 8px 10px; margin-bottom: 6px; background: #12283a; border-left: 3px solid #83dedb; border-radius: 6px; font-size: 13px; line-height: 1.5; }
+.nv54-lesion { font-size: 12.5px; margin: 8px 0; }
+@media (prefers-reduced-motion: reduce) { .nv54-flow-line { animation: none; } .nv54-dot { transition: none; } }
+
+.nv54-xring { fill: none; stroke: #ffd36e; stroke-width: 2; stroke-dasharray: 3 3; }
+.nv54-route-diagram .nv54-xtxt { fill: #ffd36e; font-size: 10.5px; font-weight: 700; }
+
+/* 신경경로 탭도 다른 탭과 같은 배치(왼쪽 패널 + 오른쪽 3D)를 유지한다 */
+#nv53-now, #nv53-full-steps { display: none !important; } /* 3D 전용 단계 카드: 3D를 숨겼으므로 함께 숨김 */
+
+/* 오른쪽 큰 화면: 왼쪽/오른쪽 두 차선 그림 (신경경로 탭에서만 보임) */
+#nv54-lanes { display: none; }
+.app:has(nav [data-tab="pathways"].active) .stage { position: relative; }
+.app:has(nav [data-tab="pathways"].active) #nv54-lanes {
+  display: flex; position: absolute; inset: 0; z-index: 30; background: #080e17; overflow-y: auto; justify-content: center; padding: 22px 16px;
+}
+#nv54-lanes .nv54-lanes-in { width: 100%; max-width: 620px; margin: auto 0; }
+#nv54-lanes h3 { margin: 0 0 4px; font-size: 19px; color: #f0f7fb; }
+#nv54-lanes p { margin: 0 0 8px; font-size: 13px; color: #9fc0d2; }
+#nv54-lanes small { display: block; margin-top: 6px; font-size: 11px; color: #7f98a9; line-height: 1.5; }
+#nv54-lanes svg { display: block; width: 100%; height: auto; }
+.nv54-lane { fill: #0f2030; stroke: #2c4558; stroke-width: 1.5; }
+.nv54-lane-h { fill: #c6dce8; font-size: 15px; font-weight: 700; }
+.nv54-lane-line { fill: none; stroke-width: 4; stroke-opacity: .55; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 2 9; animation: nv54-flow 1.1s linear infinite; pointer-events: none; }
+.nv54-lr { cursor: pointer; outline: none; }
+.nv54-lr-bg { fill: transparent; }
+.nv54-lr:hover .nv54-lr-bg, .nv54-lr:focus-visible .nv54-lr-bg { fill: #ffffff0d; }
+.nv54-lr.on .nv54-lr-bg { fill: #ffffff14; }
+.nv54-lr-n { font-size: 13px; font-weight: 700; }
+.nv54-lr-t { fill: #c6dce8; font-size: 14px; }
+.nv54-lr.on .nv54-lr-t { fill: #fff; font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .nv54-lane-line { animation: none; } }
+#nv54-lanes .nv54-lanes-card { margin-top: 10px; padding: 10px 12px; background: #12283a; border-left: 3px solid #83dedb; border-radius: 6px; font-size: 14px; line-height: 1.6; color: #e1eef5; }
+#nv54-lanes .nv54-lanes-les { border-left-color: #ffd36e; font-size: 13px; }
+
+.nv54-nerve { fill: none; stroke: #6f93a9; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.nv54-gimg { display: inline-block; margin-top: 6px; font-size: 12px; color: #83dedb; text-decoration: underline; }
+.nv54-role{font-size:12px;color:#9fc3d6;margin:4px 0}
+
+.nv54-lr-rel{font-size:11px;fill:#9fc3d6}.nv54-lr-rel.mid{fill:#ffd166;font-weight:700}
+
+.nv54-s-t { font-size: 13px; }
+#nv54-lanes svg[role=img] { width: 100%; height: auto; margin: 6px 0; }
+
+.nv54-foot2 { margin: 2px 0 6px; text-align: center; font-size: 11px; color: #7f98a9; }
+/* 해부도식 그림(밝은 해부 배경) 위에서도 경로가 보이도록 */
+svg.nv54-route-diagram[viewBox="-10 -8 380 580"] .nv54-diagram-line,
+svg.nv54-route-diagram[viewBox="-10 -8 380 330"] .nv54-diagram-line,
+svg.nv54-route-diagram[viewBox="-10 -8 380 420"] .nv54-diagram-line { stroke: var(--lc, #e8590c); stroke-opacity: 1; stroke-width: 4.5; }
+
+.nv54-xs { overflow-x: auto; }
+@media (max-width: 600px) {
+  .nv54-xs > svg { min-width: 640px; }
+  .nv54-xs::before { content: "← 옆으로 밀어서 보기 →"; display: block; font-size: 11px; color: #9bb3c2; text-align: center; }
+  .nv54-route-diagram .nv54-name { font-size: 12.5px; }
+  .nv54-route-diagram .nv54-num { font-size: 12px; }
+  .nv54-route-diagram .nv54-region { font-size: 13px; }
+  .nv54-route-diagram .nv54-xtxt { font-size: 13px; }
+}

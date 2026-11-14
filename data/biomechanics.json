@@ -1,0 +1,866 @@
+{
+  "meta": {
+    "title": "NEUROVERSE — biomechanics / plexus learning",
+    "version": "0.5.0",
+    "disclaimer": "3D 움직임은 관절 자유도 중심의 교육용 모식 모델이며 환자의 실제 운동·근전도·근육 장력을 측정한 데이터가 아님. 실제 근육 활동은 과제·부하·자세 등에 따라 달라짐. 학술 문장 단위 검증 및 한국어 신구용어 공식 대조 전."
+  },
+  "movements": [
+    {
+      "id": "elbow_flex",
+      "en": "Elbow flexion",
+      "new": "팔꿈치 굽힘",
+      "old": "주관절 굴곡",
+      "joint": "elbow",
+      "start": 0,
+      "end": 135,
+      "easy": "팔꿈치를 접어서 손을 어깨 쪽으로 가져가는 움직임이에요.",
+      "expert": "위팔자관절을 중심으로 시상면에서 아래팔을 위팔에 가까이 하는 굽힘 운동이다. 위팔근·위팔두갈래근·위팔노근이 기여하며 근육의 기여도는 아래팔 회전 위치와 부하에 따라 달라진다.",
+      "prime": [
+        "brachialis"
+      ],
+      "synergist": [
+        "biceps",
+        "brachioradialis"
+      ],
+      "antagonist": [
+        "triceps"
+      ],
+      "stabilizer": [
+        "anconeus"
+      ],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "elbow_ext",
+      "en": "Elbow extension",
+      "new": "팔꿈치 폄",
+      "old": "주관절 신전",
+      "joint": "elbow",
+      "start": 135,
+      "end": 0,
+      "easy": "굽힌 팔꿈치를 쭉 펴는 움직임이에요.",
+      "expert": "팔꿈치 폄은 위팔세갈래근이 주로 수행하며 팔꿈치근이 보조한다. 굽힘근군은 반대 방향의 토크를 만들어낼 수 있다.",
+      "prime": [
+        "triceps"
+      ],
+      "synergist": [
+        "anconeus"
+      ],
+      "antagonist": [
+        "biceps",
+        "brachialis"
+      ],
+      "stabilizer": [
+        "brachioradialis"
+      ],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK536996/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "supination",
+      "en": "Forearm supination",
+      "new": "아래팔 뒤침",
+      "old": "전완 회외",
+      "joint": "pronation",
+      "start": 0,
+      "end": 80,
+      "easy": "손바닥을 위쪽으로 돌리는 움직임이에요. 손목을 비트는 게 아니라 아래팔의 두 뼈가 서로 움직이는 거예요.",
+      "expert": "노자관절에서 노뼈가 자뼈에 대해 회전하여 아래팔 뒤침이 이루어진다. 위팔두갈래근과 뒤침근의 기여는 팔꿈치 각도 및 부하에 따라 달라진다. 3D 동작 각도는 0–80°를 예시로 제한하며 개인별 정상 범위를 뜻하지 않는다.",
+      "prime": [
+        "supinator"
+      ],
+      "synergist": [
+        "biceps"
+      ],
+      "antagonist": [
+        "pronator_teres",
+        "pronator_quadratus"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "pronation",
+      "en": "Forearm pronation",
+      "new": "아래팔 엎침",
+      "old": "전완 회내",
+      "joint": "pronation",
+      "start": 80,
+      "end": 0,
+      "easy": "손바닥을 아래로 돌리는 움직임이에요.",
+      "expert": "원엎침근 및 네모엎침근이 아래팔 엎침에 기여한다. 손바닥 방향 변화는 노자관절에서의 노뼈 회전으로 발생한다. 3D 동작 각도는 80–0°를 예시로 제한하며 개인별 정상 범위를 뜻하지 않는다.",
+      "prime": [
+        "pronator_quadratus"
+      ],
+      "synergist": [
+        "pronator_teres"
+      ],
+      "antagonist": [
+        "supinator",
+        "biceps"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "shoulder_abduct",
+      "en": "Shoulder abduction",
+      "new": "어깨 벌림",
+      "old": "견관절 외전",
+      "joint": "shoulder",
+      "start": 0,
+      "end": 135,
+      "easy": "팔을 몸 옆에서 옆으로 들어 올리는 움직임이에요. 높이 들수록 날개뼈도 함께 움직여요.",
+      "expert": "어깨 벌림은 어깨세모근과 가시위근의 협력으로 나타나며, 큰 각도의 위팔 올림에는 앞톱니근과 등세모근에 의한 어깨뼈 위쪽돌림도 필요하다.",
+      "prime": [
+        "deltoid"
+      ],
+      "synergist": [
+        "supraspinatus"
+      ],
+      "antagonist": [
+        "latissimus"
+      ],
+      "stabilizer": [
+        "serratus",
+        "trapezius"
+      ],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "shoulder_adduct",
+      "en": "Shoulder adduction",
+      "new": "어깨 모음",
+      "old": "견관절 내전",
+      "joint": "shoulder",
+      "start": 135,
+      "end": 0,
+      "easy": "옆으로 들어 올린 팔을 다시 몸 가까이 내리는 움직임이에요.",
+      "expert": "어깨 모음에는 넓은등근을 포함한 여러 근육이 기여한다. 실제 역할은 팔의 시작 각도·속도·저항에 따라 달라진다.",
+      "prime": [
+        "latissimus"
+      ],
+      "synergist": [],
+      "antagonist": [
+        "deltoid",
+        "supraspinatus"
+      ],
+      "stabilizer": [
+        "trapezius"
+      ],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "knee_flex",
+      "en": "Knee flexion",
+      "new": "무릎 굽힘",
+      "old": "슬관절 굴곡",
+      "joint": "knee",
+      "start": 0,
+      "end": 110,
+      "easy": "무릎을 굽혀 발꿈치가 엉덩이 쪽으로 가까워지게 해요.",
+      "expert": "무릎 굽힘에는 뒤넙다리근군이 크게 기여한다. 관절면 운동과 다관절근 영향으로 실제 움직임은 단순 회전보다 복잡하다.",
+      "prime": [
+        "hamstrings"
+      ],
+      "synergist": [
+        "gastrocnemius"
+      ],
+      "antagonist": [
+        "quadriceps"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500017/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "knee_ext",
+      "en": "Knee extension",
+      "new": "무릎 폄",
+      "old": "슬관절 신전",
+      "joint": "knee",
+      "start": 110,
+      "end": 0,
+      "easy": "굽힌 무릎을 펴는 움직임이에요.",
+      "expert": "넙다리네갈래근은 무릎 폄의 주동근군이며 뒤넙다리근군은 그 반대 토크를 형성할 수 있다.",
+      "prime": [
+        "quadriceps"
+      ],
+      "synergist": [],
+      "antagonist": [
+        "hamstrings"
+      ],
+      "stabilizer": [
+        "gastrocnemius"
+      ],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500017/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "ankle_dorsi",
+      "en": "Ankle dorsiflexion",
+      "new": "발등굽힘",
+      "old": "족관절 배측굴곡",
+      "joint": "ankle",
+      "start": 0,
+      "end": 25,
+      "easy": "발끝을 정강이 쪽으로 들어 올리는 움직임이에요.",
+      "expert": "발목 발등굽힘은 앞정강근 및 발가락폄근군에 의해 수행되며, 발목이 움직일 때 종아리 뒤근육이 반대 작용을 할 수 있다.",
+      "prime": [
+        "tibialis_anterior"
+      ],
+      "synergist": [
+        "edl"
+      ],
+      "antagonist": [
+        "gastrocnemius",
+        "soleus"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "ankle_plantar",
+      "en": "Ankle plantarflexion",
+      "new": "발바닥굽힘",
+      "old": "족관절 저측굴곡",
+      "joint": "ankle",
+      "start": 0,
+      "end": 40,
+      "easy": "발레처럼 발끝을 아래로 뻗거나 까치발을 드는 움직임이에요.",
+      "expert": "발목 발바닥굽힘은 장딴지근·가자미근 등에 의해 수행된다. 발목 각도는 단순화된 운동학 변수이다.",
+      "prime": [
+        "soleus",
+        "gastrocnemius"
+      ],
+      "synergist": [],
+      "antagonist": [
+        "tibialis_anterior",
+        "edl"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured",
+      "roleCaveat": "주동근·협력근·길항근·안정근 분류는 전형적인 역할을 단순화한 것이며, 실제 활성과 역할은 과제·부하·관절각에 따라 변합니다.",
+      "sourceReview": "주제 관련 문헌 연결; 동작별 3D 좌표·근활성 수치 및 정량 검증 미완료"
+    },
+    {
+      "id": "wrist_flex",
+      "en": "Wrist flexion",
+      "new": "손목 굽힘",
+      "old": "수근관절 굴곡",
+      "joint": "wrist",
+      "start": 0,
+      "end": 80,
+      "easy": "손바닥 쪽으로 손목을 꺾는 움직임이에요.",
+      "expert": "손목굽힘근이 담당한다.",
+      "prime": [
+        "flexor_carpi_radialis",
+        "flexor_carpi_ulnaris"
+      ],
+      "synergist": [],
+      "antagonist": [
+        "extensor_carpi_radialis",
+        "extensor_carpi_ulnaris"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured"
+    },
+    {
+      "id": "wrist_ext",
+      "en": "Wrist extension",
+      "new": "손목 폄",
+      "old": "수근관절 신전",
+      "joint": "wrist",
+      "start": 0,
+      "end": 70,
+      "easy": "손등 쪽으로 손목을 젖히는 움직임이에요.",
+      "expert": "손목폄근이 담당하며 노신경 지배이다.",
+      "prime": [
+        "extensor_carpi_radialis",
+        "extensor_carpi_ulnaris"
+      ],
+      "synergist": [],
+      "antagonist": [
+        "flexor_carpi_radialis",
+        "flexor_carpi_ulnaris"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured"
+    },
+    {
+      "id": "hip_flex",
+      "en": "Hip flexion",
+      "new": "엉덩관절 굽힘",
+      "old": "고관절 굴곡",
+      "joint": "hip",
+      "start": 0,
+      "end": 120,
+      "easy": "허벅지를 앞으로 들어 올리는 움직임이에요.",
+      "expert": "엉덩허리근이 주동근이다.",
+      "prime": [
+        "iliopsoas"
+      ],
+      "synergist": [
+        "quadriceps"
+      ],
+      "antagonist": [
+        "gluteus_maximus",
+        "hamstrings"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured"
+    },
+    {
+      "id": "hip_ext",
+      "en": "Hip extension",
+      "new": "엉덩관절 폄",
+      "old": "고관절 신전",
+      "joint": "hip",
+      "start": 0,
+      "end": 20,
+      "easy": "허벅지를 뒤로 보내는 움직임이에요.",
+      "expert": "큰볼기근이 주동근이다.",
+      "prime": [
+        "gluteus_maximus"
+      ],
+      "synergist": [
+        "hamstrings"
+      ],
+      "antagonist": [
+        "iliopsoas"
+      ],
+      "stabilizer": [],
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "visualizationType": "educational_schematic_not_measured"
+    }
+  ],
+  "muscles": {
+    "biceps": {
+      "en": "Biceps brachii",
+      "new": "위팔두갈래근",
+      "old": "상완이두근",
+      "nerve": "musculocutaneous",
+      "easy": "팔꿈치를 굽히고 손바닥을 위로 돌리는 걸 도와줘요.",
+      "expert": "위팔두갈래근은 팔꿈치 굽힘과 아래팔 뒤침에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "brachialis": {
+      "en": "Brachialis",
+      "new": "위팔근",
+      "old": "상완근",
+      "nerve": "musculocutaneous",
+      "easy": "팔꿈치를 굽힐 때 중심이 되는 근육이에요.",
+      "expert": "위팔근은 아래팔의 회전 위치와 관계없이 팔꿈치 굽힘에 크게 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK551630/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "brachioradialis": {
+      "en": "Brachioradialis",
+      "new": "위팔노근",
+      "old": "완요골근",
+      "nerve": "radial",
+      "easy": "손바닥을 옆으로 세운 채 팔꿈치를 굽힐 때 도와줘요.",
+      "expert": "위팔노근은 중립 위치에서의 팔꿈치 굽힘에 기여하며 노동맥신경이 아닌 노신경의 지배를 받는다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "triceps": {
+      "en": "Triceps brachii",
+      "new": "위팔세갈래근",
+      "old": "상완삼두근",
+      "nerve": "radial",
+      "easy": "팔꿈치를 펴는 대표 근육이에요.",
+      "expert": "위팔세갈래근은 팔꿈치 폄의 주요 작용근으로 노신경의 지배를 받는다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK536996/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "anconeus": {
+      "en": "Anconeus",
+      "new": "팔꿈치근",
+      "old": "주근",
+      "nerve": "radial",
+      "easy": "팔꿈치를 펼 때 조금 도와줘요.",
+      "expert": "팔꿈치근은 팔꿈치 폄과 관절 안정에 보조적으로 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK536996/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "supinator": {
+      "en": "Supinator",
+      "new": "뒤침근",
+      "old": "회외근",
+      "nerve": "radial",
+      "easy": "손바닥이 위를 향하도록 아래팔을 돌려줘요.",
+      "expert": "뒤침근은 노신경 깊은가지의 지배를 받으며 아래팔 뒤침에 관여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "pronator_teres": {
+      "en": "Pronator teres",
+      "new": "원엎침근",
+      "old": "원회내근",
+      "nerve": "median",
+      "easy": "손바닥이 아래를 향하도록 아래팔을 돌려요.",
+      "expert": "원엎침근은 정중신경 지배 아래 아래팔 엎침에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "pronator_quadratus": {
+      "en": "Pronator quadratus",
+      "new": "네모엎침근",
+      "old": "방형회내근",
+      "nerve": "median",
+      "easy": "손바닥을 아래로 돌릴 때 자주 쓰는 깊은 근육이에요.",
+      "expert": "네모엎침근은 앞뼈사이신경(정중신경 가지)의 지배를 받으며 아래팔 엎침의 주요 근육이다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "deltoid": {
+      "en": "Deltoid",
+      "new": "어깨세모근",
+      "old": "삼각근",
+      "nerve": "axillary",
+      "easy": "팔을 옆으로 벌려 들어 올려요.",
+      "expert": "어깨세모근 중간섬유는 어깨 벌림에 주로 관여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "supraspinatus": {
+      "en": "Supraspinatus",
+      "new": "가시위근",
+      "old": "극상근",
+      "nerve": "suprascapular",
+      "easy": "팔을 옆으로 들어 올리기 시작할 때 도움을 줘요.",
+      "expert": "가시위근은 어깨 벌림의 초기 구간에 기여하며 회전근개 안정화 기능도 가진다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "serratus": {
+      "en": "Serratus anterior",
+      "new": "앞톱니근",
+      "old": "전거근",
+      "nerve": "long_thoracic",
+      "easy": "날개뼈를 움직여 팔을 높이 들어 올리도록 도와줘요.",
+      "expert": "앞톱니근은 어깨뼈 위쪽돌림과 어깨뼈의 흉곽 밀착 유지에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "trapezius": {
+      "en": "Trapezius",
+      "new": "등세모근",
+      "old": "승모근",
+      "nerve": "accessory",
+      "easy": "날개뼈가 팔의 움직임에 맞춰 움직이도록 도와줘요.",
+      "expert": "등세모근 위·아래섬유는 어깨뼈 위쪽돌림에 관여하며 운동신경 분포는 더부신경과 관련된다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "latissimus": {
+      "en": "Latissimus dorsi",
+      "new": "넓은등근",
+      "old": "광배근",
+      "nerve": "thoracodorsal",
+      "easy": "팔을 몸 쪽으로 내리고 뒤로 당기는 데 도움을 줘요.",
+      "expert": "넓은등근은 어깨관절 모음·폄·안쪽돌림에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "quadriceps": {
+      "en": "Quadriceps femoris",
+      "new": "넙다리네갈래근",
+      "old": "대퇴사두근",
+      "nerve": "femoral",
+      "easy": "무릎을 펴는 네 개의 근육이 모인 큰 근육이에요.",
+      "expert": "넙다리네갈래근은 무릎 폄의 주동근군이다. 넙다리신경(L2–L4)의 지배를 받는다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500017/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "hamstrings": {
+      "en": "Hamstring group",
+      "new": "뒤넙다리근군",
+      "old": "슬괵근군",
+      "nerve": "sciatic",
+      "easy": "무릎을 굽히는 데 도움을 주는 허벅지 뒤쪽 근육들이에요.",
+      "expert": "뒤넙다리근군 대부분은 무릎 굽힘과 엉덩관절 폄에 기여한다. 넙다리두갈래근 짧은갈래의 신경 지배는 예외다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500017/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "gastrocnemius": {
+      "en": "Gastrocnemius",
+      "new": "장딴지근",
+      "old": "비복근",
+      "nerve": "tibial",
+      "easy": "발끝으로 서려고 할 때 힘을 주는 종아리 근육이에요.",
+      "expert": "장딴지근은 발목 발바닥굽힘과 무릎 굽힘에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "soleus": {
+      "en": "Soleus",
+      "new": "가자미근",
+      "old": "가자미근",
+      "nerve": "tibial",
+      "easy": "서 있을 때 몸을 지탱하고 발끝으로 미는 데 도움을 줘요.",
+      "expert": "가자미근은 발목 발바닥굽힘에 크게 기여하며 자세 유지에 중요하다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "tibialis_anterior": {
+      "en": "Tibialis anterior",
+      "new": "앞정강근",
+      "old": "전경골근",
+      "nerve": "deep_fibular",
+      "easy": "발끝을 정강이 쪽으로 들어 올려요.",
+      "expert": "앞정강근은 발목 발등굽힘과 발 안쪽번짐에 관여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "edl": {
+      "en": "Extensor digitorum longus",
+      "new": "긴발가락폄근",
+      "old": "장지신근",
+      "nerve": "deep_fibular",
+      "easy": "발가락을 펴고 발등을 들어 올리는 걸 도와줘요.",
+      "expert": "긴발가락폄근은 발가락 폄과 발목 발등굽힘에 기여한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "iliopsoas": {
+      "en": "Iliopsoas",
+      "new": "엉덩허리근",
+      "old": "장요근",
+      "nerve": "femoral",
+      "easy": "허벅지를 앞으로 들어 올리는 가장 큰 근육이에요.",
+      "expert": "엉덩근과 큰허리근이 합쳐진 엉덩관절 굽힘의 주동근이다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "gluteus_maximus": {
+      "en": "Gluteus maximus",
+      "new": "큰볼기근",
+      "old": "대둔근",
+      "nerve": "inferior_gluteal",
+      "easy": "허벅지를 뒤로 보내 엉덩관절을 펴요.",
+      "expert": "엉덩관절 폄의 주동근, 아래볼기신경 지배.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "flexor_carpi_radialis": {
+      "en": "Flexor carpi radialis",
+      "new": "노쪽손목굽힘근",
+      "old": "요측수근굴근",
+      "nerve": "median",
+      "easy": "손목을 손바닥 쪽으로 굽혀요.",
+      "expert": "정중신경 지배, 손목 굽힘·노쪽 치우침.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "flexor_carpi_ulnaris": {
+      "en": "Flexor carpi ulnaris",
+      "new": "자쪽손목굽힘근",
+      "old": "척측수근굴근",
+      "nerve": "ulnar",
+      "easy": "손목을 손바닥 쪽으로 굽히고 새끼 쪽으로 기울여요.",
+      "expert": "자신경 지배, 손목 굽힘·자쪽 치우침.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "extensor_carpi_radialis": {
+      "en": "Extensor carpi radialis",
+      "new": "노쪽손목폄근",
+      "old": "요측수근신근",
+      "nerve": "radial",
+      "easy": "손목을 손등 쪽으로 젖혀요.",
+      "expert": "노신경 지배, 손목 폄.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "extensor_carpi_ulnaris": {
+      "en": "Extensor carpi ulnaris",
+      "new": "자쪽손목폄근",
+      "old": "척측수근신근",
+      "nerve": "radial",
+      "easy": "손목을 손등 쪽으로 젖히고 새끼 쪽으로 기울여요.",
+      "expert": "뒤뼈사이신경(노신경 가지) 지배, 손목 폄.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK545158/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    }
+  },
+  "nerves": {
+    "musculocutaneous": {
+      "en": "Musculocutaneous nerve",
+      "new": "근육피부신경",
+      "old": "근피신경",
+      "roots": "C5–C7",
+      "easy": "가쪽다발에서 나와 팔 앞쪽 근육으로 가요.",
+      "expert": "팔신경얼기의 가쪽다발에서 기원하여 위팔두갈래근, 위팔근, 부리위팔근 등에 분포한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "radial": {
+      "en": "Radial nerve",
+      "new": "노신경",
+      "old": "요골신경",
+      "roots": "C5–T1",
+      "easy": "팔 뒤쪽과 손목을 펴는 근육 등에 연결되는 신경이에요.",
+      "expert": "팔신경얼기 뒤다발에서 기원하여 팔 뒤쪽 폄근과 아래팔 폄근군에 분포한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "axillary": {
+      "en": "Axillary nerve",
+      "new": "겨드랑신경",
+      "old": "액와신경",
+      "roots": "C5–C6",
+      "easy": "어깨세모근을 움직이도록 명령을 보내요.",
+      "expert": "뒤다발에서 분지해 어깨세모근과 작은원근 등에 운동신경을 공급한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "median": {
+      "en": "Median nerve",
+      "new": "정중신경",
+      "old": "정중신경",
+      "roots": "C6–T1 (다양)",
+      "easy": "아래팔 앞쪽 근육과 손 일부로 가는 신경이에요.",
+      "expert": "가쪽다발과 안쪽다발의 뿌리가 합쳐지며 앞뼈사이신경 등의 가지를 형성한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "ulnar": {
+      "en": "Ulnar nerve",
+      "new": "자신경",
+      "old": "척골신경",
+      "roots": "C8–T1",
+      "easy": "손의 작은 근육과 새끼손가락 쪽 감각에 중요해요.",
+      "expert": "안쪽다발에서 이어지며 손의 다수 내재근과 일부 아래팔 굽힘근에 분포한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "suprascapular": {
+      "en": "Suprascapular nerve",
+      "new": "어깨위신경",
+      "old": "견갑상신경",
+      "roots": "C5–C6",
+      "easy": "어깨 뒤쪽의 회전근개 근육을 움직이도록 도와줘요.",
+      "expert": "위줄기에서 분지하여 가시위근·가시아래근에 분포한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "long_thoracic": {
+      "en": "Long thoracic nerve",
+      "new": "긴가슴신경",
+      "old": "장흉신경",
+      "roots": "C5–C7",
+      "easy": "날개뼈를 가슴에 붙이도록 돕는 앞톱니근에 연결돼요.",
+      "expert": "C5–C7 앞가지에서 기원하여 앞톱니근을 지배한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "accessory": {
+      "en": "Accessory nerve (CN XI)",
+      "new": "더부신경",
+      "old": "부신경",
+      "roots": "뇌신경 XI",
+      "easy": "등세모근을 움직이도록 돕는 신경이에요.",
+      "expert": "더부신경(뇌신경 XI)의 척수뿌리 부분은 등세모근과 목빗근 운동에 관련된다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "thoracodorsal": {
+      "en": "Thoracodorsal nerve",
+      "new": "가슴등신경",
+      "old": "흉배신경",
+      "roots": "C6–C8",
+      "easy": "등의 넓은등근에 움직임 명령을 보내요.",
+      "expert": "뒤다발에서 분지하여 넓은등근을 지배한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "femoral": {
+      "en": "Femoral nerve",
+      "new": "넙다리신경",
+      "old": "대퇴신경",
+      "roots": "L2–L4",
+      "easy": "허벅지 앞쪽 근육에 명령을 보내 무릎을 펴게 도와줘요.",
+      "expert": "허리신경얼기에서 기원하여 넙다리네갈래근 등에 운동신경을 공급한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "sciatic": {
+      "en": "Sciatic nerve",
+      "new": "궁둥신경",
+      "old": "좌골신경",
+      "roots": "L4–S3",
+      "easy": "허벅지 뒤쪽과 종아리·발로 이어지는 큰 신경이에요.",
+      "expert": "엉치신경얼기에서 기원하며 정강신경과 온종아리신경 계통으로 분기한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "tibial": {
+      "en": "Tibial nerve",
+      "new": "정강신경",
+      "old": "경골신경",
+      "roots": "L4–S3",
+      "easy": "종아리 뒤쪽 근육에 명령을 보내 발끝으로 밀게 도와줘요.",
+      "expert": "궁둥신경의 한 말단성분이며 종아리 뒤칸 근육과 발바닥 근육에 분포한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "deep_fibular": {
+      "en": "Deep fibular nerve",
+      "new": "깊은종아리신경",
+      "old": "심비골신경",
+      "roots": "L4–L5 주로",
+      "easy": "정강이 앞쪽 근육에 명령을 보내 발등을 들게 도와줘요.",
+      "expert": "온종아리신경의 가지로 정강이 앞칸 근육의 운동신경을 제공한다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "inferior_gluteal": {
+      "en": "Inferior gluteal nerve",
+      "new": "아래볼기신경",
+      "old": "하둔신경",
+      "roots": "L5–S2",
+      "easy": "큰볼기근에 명령을 보내요.",
+      "expert": "엉치신경얼기에서 기원, 큰볼기근 지배.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    },
+    "common_fibular": {
+      "en": "Common fibular (peroneal) nerve",
+      "new": "온종아리신경",
+      "old": "총비골신경",
+      "roots": "L4–S2",
+      "easy": "궁둥신경에서 갈라져 종아리 바깥쪽으로 돌아가요. 다치면 발등을 못 들어 발이 처져요(발 처짐).",
+      "expert": "궁둥신경의 가쪽 갈래로 얕은·깊은종아리신경으로 나뉜다. 종아리뼈머리 부위에서 손상되기 쉽다.",
+      "source": "https://www.ncbi.nlm.nih.gov/books/NBK549847/",
+      "terminologyVerified": false,
+      "independentFacultyVerified": false
+    }
+  },
+  "reference": {
+    "elbow": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+    "plexus": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+    "brachialis": "https://www.ncbi.nlm.nih.gov/books/NBK551630/",
+    "triceps": "https://www.ncbi.nlm.nih.gov/books/NBK536996/",
+    "upper_limb": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+    "shoulder": "https://www.ncbi.nlm.nih.gov/books/NBK526056/",
+    "knee": "https://www.ncbi.nlm.nih.gov/books/NBK500017/",
+    "ankle": "https://www.ncbi.nlm.nih.gov/books/NBK545158/"
+  },
+  "plexus": {
+    "order": [
+      "roots",
+      "trunks",
+      "divisions",
+      "cords",
+      "terminalBranches"
+    ],
+    "roots": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "T1"
+    ],
+    "trunks": [
+      "upper",
+      "middle",
+      "lower"
+    ],
+    "cords": [
+      "lateral",
+      "posterior",
+      "medial"
+    ],
+    "branches": [
+      "musculocutaneous",
+      "axillary",
+      "radial",
+      "median",
+      "ulnar"
+    ]
+  }
+}

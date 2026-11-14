@@ -1,0 +1,457 @@
+{
+  "release": "RC3",
+  "date": "2026-11-12",
+  "reviewMethod": "직접 확인한 권위 자료에서 12개 핵심 주장과 설명의 방향성 대조. 전체 원본 모델 정합성 또는 공식 교수 심사는 아님.",
+  "disclaimers": [
+    "원문과 서술 방향성 대조는 해당 주장이 문헌에서 지지되는지를 의미하며, 임상적 효능과 한국어 표준용어 전수 검증을 뜻하지 않습니다.",
+    "3D 좌표 정합성과 모델 라이선스는 아직 미검증입니다.",
+    "학생 대상 교육효과 시험 및 독립 교수·물리치료사 검수는 실시되지 않았습니다."
+  ],
+  "sources": {
+    "ta": {
+      "title": "IFAA FIPAT · Terminologia Anatomica / Neuroanatomica",
+      "url": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "authority": "국제해부학회연맹 FIPAT",
+      "scope": "국제 해부학 영어·라틴어 표준 용어와 계층구조. 한국어 신·구용어의 공인 여부를 직접 증명하지 않음"
+    },
+    "cst": {
+      "title": "Neuroanatomy, Pyramidal Tract Lesions · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK540976/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "피질척수로 주행·숨뇌 피라미드 교차·임상 병변"
+    },
+    "cst2": {
+      "title": "Neuroanatomy, Corticospinal Cord Tract · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK535423/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "수의운동 경로·교차 및 개인차"
+    },
+    "umn": {
+      "title": "Neuroanatomy, Upper Motor Neuron Signs · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK541082/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "위운동신경세포 증후군·경직·반사항진·시간 경과"
+    },
+    "spinal": {
+      "title": "Neuroanatomy, Spinal Nerves · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK542218/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "뒤·앞뿌리, 혼합신경 형성, 척수신경 앞·뒤가지"
+    },
+    "plexus": {
+      "title": "Anatomy, Shoulder and Upper Limb, Brachial Plexus · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "팔신경얼기 C5–T1, 줄기, 갈래, 다발, 다섯 끝가지"
+    },
+    "elbow": {
+      "title": "Anatomy, Shoulder and Upper Limb, Elbow Joint · StatPearls/NCBI Bookshelf",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+      "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+      "scope": "팔꿈치관절 구성, 주요 굽힘근·뒤침 기능"
+    },
+    "emg": {
+      "title": "The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29409427/",
+      "authority": "PubMed 등재 원저 논문",
+      "scope": "15명 건강한 젊은 남성에서 3가지 아래팔 위치의 팔꿈치 굽힘 EMG. 다른 모집단·모든 동작으로 일반화 불가"
+    },
+    "stroke": {
+      "title": "VA/DoD Clinical Practice Guideline · Management of Stroke Rehabilitation (2024)",
+      "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/rehab/stroke/index.asp",
+      "authority": "미국 재향군인부·국방부 공동 임상진료지침",
+      "scope": "뇌졸중 재활의 임상 의사결정. 학습 도구가 환자 치료를 결정할 수 없음"
+    },
+    "walk": {
+      "title": "Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete SCI, and Brain Injury (2020)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31834165/",
+      "authority": "Journal of Neurologic Physical Therapy / APTA 신경물리치료학회",
+      "scope": "발병 후 6개월 초과 보행 가능 대상자에서 보행 속도·거리 향상 지침; 급성기 일반화 금지"
+    },
+    "korstroke": {
+      "title": "대한뇌신경재활학회 · 뇌졸중 재활치료 진료지침 4판 Part II",
+      "url": "https://www.guideline.or.kr/guide/view.php?cate=A&number=1171",
+      "authority": "대한뇌신경재활학회, 임상진료지침정보센터",
+      "scope": "성인 뇌졸중 운동·감각 재활; GRADE 방식 지침"
+    }
+  },
+  "claims": [
+    {
+      "id": "CST-01",
+      "area": "신경해부학",
+      "title": "피질척수로의 주요 경유 구조",
+      "en": "Corticospinal tract",
+      "new": "겉질척수로",
+      "old": "피질척수로",
+      "expert": "겉질척수로는 여러 운동 및 체성감각 관련 대뇌겉질 영역에서 기원해 대뇌부챗살(corona radiata), 속섬유막, 대뇌다리, 다리뇌, 숨뇌를 경유하여 척수로 하행한다.",
+      "easy": "뇌에서 몸을 움직이라는 명령을 보내는 긴 신경 길이에요. 이 길은 뇌 안쪽과 뇌줄기를 지나 척수 쪽으로 내려가요.",
+      "sources": [
+        {
+          "key": "cst",
+          "title": "Neuroanatomy, Pyramidal Tract Lesions · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK540976/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "피질척수로 주행·숨뇌 피라미드 교차·임상 병변"
+        },
+        {
+          "key": "cst2",
+          "title": "Neuroanatomy, Corticospinal Cord Tract · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535423/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "수의운동 경로·교차 및 개인차"
+        }
+      ],
+      "related": [
+        "decussation",
+        "brainstem"
+      ],
+      "go": "pathways",
+      "risk": "발생 기원을 일차운동겉질 하나로 제한하지 않음",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "CST-02",
+      "area": "신경해부학",
+      "title": "피라미드 교차의 정확한 위치",
+      "en": "Pyramidal decussation",
+      "new": "피라미드교차",
+      "old": "추체교차",
+      "expert": "겉질척수로 섬유의 대다수는 숨뇌 하부(caudal medulla)의 피라미드교차에서 반대측으로 교차한 뒤 가쪽겉질척수로를 형성한다. 교차 비율은 문헌과 개인차에 따라 달라진다.",
+      "easy": "뇌에서 내려온 움직임 명령 길의 대부분이 숨뇌 맨 아래쪽에서 반대편으로 건너가요. 그래서 한쪽 뇌가 반대쪽 팔다리 움직임에 큰 영향을 줘요.",
+      "sources": [
+        {
+          "key": "cst",
+          "title": "Neuroanatomy, Pyramidal Tract Lesions · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK540976/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "피질척수로 주행·숨뇌 피라미드 교차·임상 병변"
+        },
+        {
+          "key": "cst2",
+          "title": "Neuroanatomy, Corticospinal Cord Tract · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535423/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "수의운동 경로·교차 및 개인차"
+        }
+      ],
+      "related": [
+        "brainstem",
+        "spinal_cord"
+      ],
+      "go": "pathways",
+      "risk": "교차하는 섬유를 100%로 표현하면 부정확",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "UMN-01",
+      "area": "신경해부학",
+      "title": "위운동신경세포 손상 징후",
+      "en": "Upper motor neuron signs",
+      "new": "위운동신경세포 징후",
+      "old": "상위운동신경원 징후",
+      "expert": "위운동신경세포 경로 손상에서는 수의운동 약화, 반사 항진, 속도 의존적인 근긴장 증가(경직), 병적 발바닥반사 등이 나타날 수 있다. 급성기에는 일시적으로 이완성·저반사 양상이 가능하며 모든 징후가 반드시 동시에 나타나는 것은 아니다.",
+      "easy": "뇌에서 근육에 명령을 보내는 길이 다치면 힘이 빠질 수 있어요. 시간이 지나면서 몸이 뻣뻣하거나 반사가 너무 강해질 수도 있지만 사람마다 달라요.",
+      "sources": [
+        {
+          "key": "umn",
+          "title": "Neuroanatomy, Upper Motor Neuron Signs · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK541082/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "위운동신경세포 증후군·경직·반사항진·시간 경과"
+        }
+      ],
+      "related": [
+        "cst",
+        "spinal_cord"
+      ],
+      "go": "pathways",
+      "risk": "급성기부터 모든 환자에게 경직이 생긴다고 단정 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "NERVE-01",
+      "area": "말초신경",
+      "title": "신경뿌리와 신경가지의 구분",
+      "en": "Dorsal/ventral roots vs dorsal/ventral rami",
+      "new": "척수신경뿌리와 앞·뒤가지",
+      "old": "척수신경근과 전·후지",
+      "expert": "척수신경의 뒤뿌리(구심성 감각섬유)와 앞뿌리(원심성 운동섬유)는 합쳐져 혼합 척수신경을 형성하며 이후 앞가지와 뒤가지로 나뉜다. 팔신경얼기에서 말하는 root는 통상 C5–T1 혼합척수신경의 앞가지로, 척수신경의 앞뿌리와 구별해야 한다.",
+      "easy": "신경이 척수에서 나올 때의 ‘시작 줄기’와, 서로 합쳐진 뒤 다시 갈라지는 ‘가지’는 달라요. 팔로 가는 큰 신경망의 뿌리는 그중 앞가지 부분이에요.",
+      "sources": [
+        {
+          "key": "spinal",
+          "title": "Neuroanatomy, Spinal Nerves · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK542218/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "뒤·앞뿌리, 혼합신경 형성, 척수신경 앞·뒤가지"
+        },
+        {
+          "key": "plexus",
+          "title": "Anatomy, Shoulder and Upper Limb, Brachial Plexus · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "팔신경얼기 C5–T1, 줄기, 갈래, 다발, 다섯 끝가지"
+        }
+      ],
+      "related": [
+        "brachial_plexus"
+      ],
+      "go": "biomech",
+      "risk": "앞뿌리와 신경얼기 뿌리를 같은 구조로 표현 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "PLEX-01",
+      "area": "말초신경",
+      "title": "팔신경얼기의 5단계 조직",
+      "en": "Brachial plexus organization",
+      "new": "팔신경얼기",
+      "old": "완신경총",
+      "expert": "전형적인 팔신경얼기는 C5–T1 앞가지(뿌리) → 위·가운데·아래줄기 3개 → 앞·뒤갈래 총 6개 → 가쪽·뒤·안쪽다발 3개 → 주요 끝가지 5개(근육피부·겨드랑·노·정중·자신경)로 이어진다. 곁가지와 변이가 존재한다.",
+      "easy": "목에서 나오는 신경들이 서로 모였다 갈라지면서 팔과 손으로 퍼져 나가는 큰 길망이에요. 뿌리에서 시작해 굵은 줄기, 갈라지는 부분, 다발, 손으로 향하는 가지로 이어져요.",
+      "sources": [
+        {
+          "key": "plexus",
+          "title": "Anatomy, Shoulder and Upper Limb, Brachial Plexus · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "팔신경얼기 C5–T1, 줄기, 갈래, 다발, 다섯 끝가지"
+        }
+      ],
+      "related": [
+        "roots_vs_rami"
+      ],
+      "go": "biomech",
+      "risk": "전형적 패턴이며 해부학적 변이·곁가지를 생략했음",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "PLEX-02",
+      "area": "말초신경",
+      "title": "팔신경얼기의 뿌리: C5~T1",
+      "en": "Ventral rami C5–T1",
+      "new": "다섯 척수신경 앞가지",
+      "old": "다섯 척수신경 전지",
+      "expert": "팔신경얼기는 대체로 C5, C6, C7, C8, T1 척수신경의 앞가지에서 기원하며 위줄기(C5–C6), 가운데줄기(C7), 아래줄기(C8–T1)를 형성한다.",
+      "easy": "목 아래쪽에서 신경 다섯 줄이 나와 팔로 가는 큰 신경길을 만들어요. 이 줄들은 다시 세 굵은 줄기로 모여요.",
+      "sources": [
+        {
+          "key": "plexus",
+          "title": "Anatomy, Shoulder and Upper Limb, Brachial Plexus · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK500016/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "팔신경얼기 C5–T1, 줄기, 갈래, 다발, 다섯 끝가지"
+        }
+      ],
+      "related": [
+        "brachial_plexus"
+      ],
+      "go": "biomech",
+      "risk": "C4·T2의 변이를 포함하지 않는 전형 모델",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "ELBOW-01",
+      "area": "운동학",
+      "title": "팔꿈치 굽힘의 대표 근육",
+      "en": "Elbow flexors",
+      "new": "팔꿈치 굽힘근",
+      "old": "주관절 굴곡근",
+      "expert": "팔꿈치 굽힘에 위팔근, 위팔두갈래근, 위팔노근이 주요하게 기여한다. 역할 분담은 아래팔 회전 자세, 부하, 관절각, 움직임 과제에 따라 변하며 모든 상황에서 같은 근육이 우세하다고 단정할 수 없다.",
+      "easy": "팔꿈치를 굽힐 때는 한 근육만 움직이는 게 아니에요. 팔 앞쪽의 여러 근육이 함께 힘을 내요. 손바닥 방향이나 들고 있는 물건에 따라 도움의 정도가 달라져요.",
+      "sources": [
+        {
+          "key": "elbow",
+          "title": "Anatomy, Shoulder and Upper Limb, Elbow Joint · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "팔꿈치관절 구성, 주요 굽힘근·뒤침 기능"
+        },
+        {
+          "key": "emg",
+          "title": "The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29409427/",
+          "authority": "PubMed 등재 원저 논문",
+          "scope": "15명 건강한 젊은 남성에서 3가지 아래팔 위치의 팔꿈치 굽힘 EMG. 다른 모집단·모든 동작으로 일반화 불가"
+        }
+      ],
+      "related": [
+        "muscle_activation",
+        "synergist"
+      ],
+      "go": "biomech",
+      "risk": "주동근 고정 서열 및 정량적 활성률 추정 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "ELBOW-02",
+      "area": "운동학",
+      "title": "위팔두갈래근의 뒤침 기능",
+      "en": "Biceps brachii and supination",
+      "new": "위팔두갈래근의 뒤침 작용",
+      "old": "상완이두근의 회외 작용",
+      "expert": "위팔두갈래근은 팔꿈치 굽힘에 기여하며, 아래팔을 뒤침시키는 대표 근육 가운데 하나다. 실제 근육의 모멘트암과 역할은 팔꿈치 각도 및 아래팔 자세에 따라 달라진다.",
+      "easy": "팔꿈치를 접는 근육은 손바닥을 위로 돌릴 때도 힘을 보태요. 같은 근육이 두 가지 다른 움직임에 참여할 수 있어요.",
+      "sources": [
+        {
+          "key": "elbow",
+          "title": "Anatomy, Shoulder and Upper Limb, Elbow Joint · StatPearls/NCBI Bookshelf",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK532948/",
+          "authority": "NCBI Bookshelf에 게재된 StatPearls 저술",
+          "scope": "팔꿈치관절 구성, 주요 굽힘근·뒤침 기능"
+        }
+      ],
+      "related": [
+        "muscle_activation"
+      ],
+      "go": "biomech",
+      "risk": "운동방향 변화에 따른 모든 근육의 실제 활성률 정량화 불가",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "EMG-01",
+      "area": "운동학",
+      "title": "교육용 근육 색상과 실제 근전도",
+      "en": "Muscle activity vs EMG",
+      "new": "근육 활성·근전도",
+      "old": "근활성·근전도",
+      "expert": "표면근전도는 근육의 전기적 활동을 측정하는 방법이며 근육 힘·장력·수축량에 직접 1:1 대응하는 절대치가 아니다. 현 시연의 강조 색상은 동작에서의 기능적 역할을 나타내는 범주형 도식이며 실제 EMG 데이터가 아니다.",
+      "easy": "화면에서 빨갛게 보이는 근육은 ‘이 동작에 참여한다’는 뜻이에요. 진짜 사람의 근육을 검사해 얻은 숫자는 아니에요.",
+      "sources": [
+        {
+          "key": "emg",
+          "title": "The Role of the Muscle Brachioradialis in Elbow Flexion: An Electromyographic Study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29409427/",
+          "authority": "PubMed 등재 원저 논문",
+          "scope": "15명 건강한 젊은 남성에서 3가지 아래팔 위치의 팔꿈치 굽힘 EMG. 다른 모집단·모든 동작으로 일반화 불가"
+        }
+      ],
+      "related": [
+        "prime_mover",
+        "synergist"
+      ],
+      "go": "biomech",
+      "risk": "근활성률 % 임의로 생성해 실측처럼 제시 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "REHAB-01",
+      "area": "물리치료 임상",
+      "title": "만성 뇌졸중 이후 보행훈련 지침",
+      "en": "Locomotor rehabilitation CPG after stroke",
+      "new": "뇌졸중 뒤 보행 재활 지침",
+      "old": "뇌졸중 후 보행 재활 지침",
+      "expert": "2020년 신경물리치료 임상진료지침은 발병 6개월을 초과하고 보행이 가능한 뇌졸중 등 신경계 손상 환자에서 보행 속도와 거리를 개선하기 위한 중·고강도 과제특이적 보행훈련을 권고한다. 적용 대상과 목표 결과지표를 벗어나 급성기 모든 환자에게 일반화해서는 안 된다.",
+      "easy": "뇌졸중을 겪은 뒤에도 다시 걷는 연습이 중요해요. 오래 지난 뒤에도 걸을 수 있는 사람은 상태에 맞는 충분한 강도의 걷기 연습이 걸음 속도와 거리를 늘리는 데 도움이 될 수 있어요.",
+      "sources": [
+        {
+          "key": "walk",
+          "title": "Clinical Practice Guideline to Improve Locomotor Function Following Chronic Stroke, Incomplete SCI, and Brain Injury (2020)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31834165/",
+          "authority": "Journal of Neurologic Physical Therapy / APTA 신경물리치료학회",
+          "scope": "발병 후 6개월 초과 보행 가능 대상자에서 보행 속도·거리 향상 지침; 급성기 일반화 금지"
+        }
+      ],
+      "related": [
+        "umn",
+        "elbow_flex"
+      ],
+      "go": "clinical",
+      "risk": "이 지침의 대상은 발병 후 6개월 초과·보행 가능 등 선정 기준이 있음",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "REHAB-02",
+      "area": "물리치료 임상",
+      "title": "뇌졸중 재활 평가와 임상 판단",
+      "en": "Stroke rehabilitation clinical guidelines",
+      "new": "뇌졸중 재활진료지침",
+      "old": "뇌졸중 재활 진료 지침",
+      "expert": "뇌졸중 재활의 중재 선택에는 병기, 기능수준, 안전성, 목표, 동반질환 및 평가결과가 반영되어야 한다. 일반적인 교육용 뇌혈관 영역 그림만으로 개별 환자의 병변·예후 또는 치료를 결정할 수 없다.",
+      "easy": "뇌졸중 환자라고 모두 같은 치료를 받는 건 아니에요. 상태를 정확히 확인한 뒤 안전하고 도움이 되는 방법을 골라야 해요.",
+      "sources": [
+        {
+          "key": "stroke",
+          "title": "VA/DoD Clinical Practice Guideline · Management of Stroke Rehabilitation (2024)",
+          "url": "https://www.healthquality.va.gov/HEALTHQUALITY/guidelines/rehab/stroke/index.asp",
+          "authority": "미국 재향군인부·국방부 공동 임상진료지침",
+          "scope": "뇌졸중 재활의 임상 의사결정. 학습 도구가 환자 치료를 결정할 수 없음"
+        },
+        {
+          "key": "korstroke",
+          "title": "대한뇌신경재활학회 · 뇌졸중 재활치료 진료지침 4판 Part II",
+          "url": "https://www.guideline.or.kr/guide/view.php?cate=A&number=1171",
+          "authority": "대한뇌신경재활학회, 임상진료지침정보센터",
+          "scope": "성인 뇌졸중 운동·감각 재활; GRADE 방식 지침"
+        }
+      ],
+      "related": [
+        "umn"
+      ],
+      "go": "clinical",
+      "risk": "개인 치료지시/처방으로 사용 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    },
+    {
+      "id": "TERM-01",
+      "area": "의학용어",
+      "title": "국제 해부학 표준 용어와 한국어 표기",
+      "en": "Terminologia Anatomica / Terminologia Neuroanatomica",
+      "new": "해부학 표준용어 체계",
+      "old": "해부학용어집 체계",
+      "expert": "IFAA FIPAT은 국제 해부학·신경해부학 표준용어를 제공한다. 영문/라틴어 표준 용어 및 위계와 한국어 신용어·구용어의 공식 대응 검수는 서로 다른 작업이다. 한국어 대응은 국내 공인용어집과 항목별 대조가 필요하다.",
+      "easy": "세계 여러 나라가 같은 뼈나 신경을 다른 이름으로 부르면 헷갈려요. 그래서 표준 이름을 정해 둬요. 하지만 영어 이름을 확인했다고 한국어 새 이름과 옛 이름까지 자동으로 맞는 건 아니에요.",
+      "sources": [
+        {
+          "key": "ta",
+          "title": "IFAA FIPAT · Terminologia Anatomica / Neuroanatomica",
+          "url": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+          "authority": "국제해부학회연맹 FIPAT",
+          "scope": "국제 해부학 영어·라틴어 표준 용어와 계층구조. 한국어 신·구용어의 공인 여부를 직접 증명하지 않음"
+        }
+      ],
+      "related": [
+        "cst"
+      ],
+      "go": "glossary",
+      "risk": "한국어 신·구용어 표제어 대조 전에는 공식 검증 완료로 표시 금지",
+      "reviewStatus": "원문 핵심 개념과 대조",
+      "termStatus": "국내 공식 용어집 항목별 대조 미완료",
+      "modelStatus": "해부학적 3D 정합성 검증 미완료",
+      "scope": "교육용 전형적 서술, 환자 개인차 존재"
+    }
+  ]
+}

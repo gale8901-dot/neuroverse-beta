@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "anatomicalSubject": "biceps brachii",
+  "model": "models/brain/body_mni.glb",
+  "sha256": "1c1cc2afa61779d354850fce2937c28a13c50cba78aaddb26bdd7a42c761158b",
+  "auditedMeshNames": [
+    "mesh_biceps_L",
+    "mesh_biceps_R",
+    "mesh_bones",
+    "mesh_cord",
+    "mesh_muscles_L",
+    "mesh_muscles_R",
+    "mesh_vertebrae"
+  ],
+  "auditMethod": "GLB geometry names direct inspection by trimesh; presence is a technical check, not a morphological anatomy validation",
+  "fullModelMedicalValidation": false,
+  "meshRepresentationCheckIsNotAbsenceOfAnatomy": true,
+  "references": [
+    {
+      "title": "University of Washington Muscle Atlas — Biceps Brachii",
+      "url": "https://rad.washington.edu/muscle-atlas/biceps-brachii/"
+    },
+    {
+      "title": "NCBI Bookshelf — Musculocutaneous Nerve",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK534199/"
+    },
+    {
+      "title": "Washington University Peripheral Nerve Surgery — Biceps Brachii",
+      "url": "https://nervesurgery.wustl.edu/biceps-brachii/"
+    }
+  ],
+  "structures": [
+    {
+      "id": "biceps_whole_L",
+      "label": "왼쪽 위팔두갈래근 전체",
+      "expectedMeshName": "mesh_biceps_L",
+      "description": "원본 L 부품",
+      "separatelySelectable": true,
+      "matchingParts": [
+        "mesh_biceps_L"
+      ],
+      "status": "독립 부품 존재"
+    },
+    {
+      "id": "biceps_whole_R",
+      "label": "오른쪽 위팔두갈래근 전체",
+      "expectedMeshName": "mesh_biceps_R",
+      "description": "원본 R 부품",
+      "separatelySelectable": true,
+      "matchingParts": [
+        "mesh_biceps_R"
+      ],
+      "status": "독립 부품 존재"
+    },
+    {
+      "id": "long_head",
+      "label": "긴갈래 (long head)",
+      "expectedMeshName": "biceps_long_head",
+      "description": "위팔뼈가 아닌 어깨뼈 관절오목위결절에서 기시",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "short_head",
+      "label": "짧은갈래 (short head)",
+      "expectedMeshName": "biceps_short_head",
+      "description": "어깨뼈 부리돌기 끝에서 기시",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "proximal_long_tendon",
+      "label": "긴갈래 힘줄",
+      "expectedMeshName": "biceps_long_head_tendon",
+      "description": "긴갈래의 근위 힘줄, 관절 주변 주행",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "distal_tendon",
+      "label": "원위 힘줄",
+      "expectedMeshName": "biceps_distal_tendon",
+      "description": "노뼈거친면 부착",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "bicipital_aponeurosis",
+      "label": "위팔두갈래근 널힘줄",
+      "expectedMeshName": "bicipital_aponeurosis",
+      "description": "아래팔 근막으로 연결",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "coracoid_process",
+      "label": "부리돌기",
+      "expectedMeshName": "coracoid_process",
+      "description": "짧은갈래 이는곳",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "supraglenoid_tubercle",
+      "label": "관절오목위결절",
+      "expectedMeshName": "supraglenoid_tubercle",
+      "description": "긴갈래 이는곳",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "radial_tuberosity",
+      "label": "노뼈거친면",
+      "expectedMeshName": "radial_tuberosity",
+      "description": "닿는곳",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    },
+    {
+      "id": "musculocutaneous_nerve",
+      "label": "근육피부신경",
+      "expectedMeshName": "musculocutaneous_nerve",
+      "description": "운동 신경지배",
+      "separatelySelectable": false,
+      "matchingParts": [],
+      "status": "독립 부품 미확인 · 형태 포함 여부 판별 불가"
+    }
+  ],
+  "reviewedByExternalClinician": false
+}

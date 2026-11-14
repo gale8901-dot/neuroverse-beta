@@ -1,0 +1,298 @@
+{
+  "version": "RC28",
+  "created": "2026-11-13",
+  "basis": "glTF/GLB geometry and file structure only",
+  "notProven": [
+    "해부학적 위치·형태",
+    "실제 신체 치수",
+    "구조별 의학용어 정확성",
+    "외부 전문가 검수",
+    "모델 저작권/이용허락"
+  ],
+  "models": [
+    {
+      "file": "brain_mni.glb",
+      "label": "뇌",
+      "bytes": 1958684,
+      "parts": 12,
+      "vertices": 55209,
+      "triangles": 103806,
+      "problemParts": 0,
+      "degenerateTriangles": 56,
+      "components": [
+        {
+          "name": "amygdala",
+          "vertices": 860,
+          "triangles": 1716,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "brainstem",
+          "vertices": 3678,
+          "triangles": 7352,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "cerebellum_cut",
+          "vertices": 6295,
+          "triangles": 12590,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 8
+        },
+        {
+          "name": "cingulate",
+          "vertices": 6558,
+          "triangles": 13112,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 12
+        },
+        {
+          "name": "corpus_callosum",
+          "vertices": 3256,
+          "triangles": 6508,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 8
+        },
+        {
+          "name": "frontal",
+          "vertices": 10558,
+          "triangles": 18747,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "hippocampus",
+          "vertices": 2239,
+          "triangles": 4474,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "insula",
+          "vertices": 4210,
+          "triangles": 8416,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        },
+        {
+          "name": "occipital",
+          "vertices": 3742,
+          "triangles": 6262,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "parietal",
+          "vertices": 5811,
+          "triangles": 10120,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        },
+        {
+          "name": "temporal",
+          "vertices": 6123,
+          "triangles": 10751,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 16
+        },
+        {
+          "name": "thalamus",
+          "vertices": 1879,
+          "triangles": 3758,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        }
+      ],
+      "medicalAccuracy": "unverified",
+      "coordinateRegistration": "unverified",
+      "sourceLicense": "needs_review"
+    },
+    {
+      "file": "body_mni.glb",
+      "label": "인체",
+      "bytes": 4710900,
+      "parts": 7,
+      "vertices": 143920,
+      "triangles": 208410,
+      "problemParts": 0,
+      "degenerateTriangles": 18,
+      "components": [
+        {
+          "name": "mesh_biceps_L",
+          "vertices": 2782,
+          "triangles": 3282,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        },
+        {
+          "name": "mesh_biceps_R",
+          "vertices": 2792,
+          "triangles": 3282,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 6
+        },
+        {
+          "name": "mesh_bones",
+          "vertices": 34429,
+          "triangles": 67190,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "mesh_cord",
+          "vertices": 1200,
+          "triangles": 2360,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "mesh_muscles_L",
+          "vertices": 45772,
+          "triangles": 57692,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        },
+        {
+          "name": "mesh_muscles_R",
+          "vertices": 45741,
+          "triangles": 57692,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 4
+        },
+        {
+          "name": "mesh_vertebrae",
+          "vertices": 11204,
+          "triangles": 16912,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        }
+      ],
+      "medicalAccuracy": "unverified",
+      "coordinateRegistration": "unverified",
+      "sourceLicense": "needs_review"
+    },
+    {
+      "file": "heart_mni.glb",
+      "label": "심장",
+      "bytes": 3533696,
+      "parts": 6,
+      "vertices": 79887,
+      "triangles": 134238,
+      "problemParts": 0,
+      "degenerateTriangles": 0,
+      "components": [
+        {
+          "name": "heart",
+          "vertices": 57798,
+          "triangles": 99040,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "cardiacvein",
+          "vertices": 12380,
+          "triangles": 17616,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "aorta",
+          "vertices": 5416,
+          "triangles": 10188,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "arteries",
+          "vertices": 1343,
+          "triangles": 2414,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "pulm",
+          "vertices": 871,
+          "triangles": 1302,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "veins",
+          "vertices": 2079,
+          "triangles": 3678,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        }
+      ],
+      "medicalAccuracy": "unverified",
+      "coordinateRegistration": "unverified",
+      "sourceLicense": "needs_review"
+    },
+    {
+      "file": "lungs_mni.glb",
+      "label": "폐",
+      "bytes": 1702228,
+      "parts": 3,
+      "vertices": 36035,
+      "triangles": 69530,
+      "problemParts": 0,
+      "degenerateTriangles": 0,
+      "components": [
+        {
+          "name": "GLTF",
+          "vertices": 254,
+          "triangles": 504,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "GLTF_1",
+          "vertices": 254,
+          "triangles": 504,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        },
+        {
+          "name": "GLTF_2",
+          "vertices": 35527,
+          "triangles": 68522,
+          "invalidCoordinates": false,
+          "invalidFaceIndices": false,
+          "degenerateTriangles": 0
+        }
+      ],
+      "medicalAccuracy": "unverified",
+      "coordinateRegistration": "unverified",
+      "sourceLicense": "needs_review"
+    }
+  ]
+}

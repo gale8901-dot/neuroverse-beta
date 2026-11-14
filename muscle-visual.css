@@ -1,0 +1,11 @@
+
+/* RC11: visual learning controls integrated into existing dark theme */
+.bm3d-controls{display:flex;flex-wrap:wrap;gap:8px;margin:9px 0 7px}
+.bm3d-controls label{cursor:pointer;display:flex;align-items:center;gap:4px;padding:8px 10px;border-radius:8px;border:1px solid #43607d;background:#172e47;color:#edf6ff;font-size:12px}
+.bm3d-controls input{accent-color:#69e1bc;width:16px;height:16px}
+.bm3d-legend{display:flex;flex-wrap:wrap;gap:9px;font-size:11px;color:#cddff0;margin:8px 0}
+.bm3d-legend span{display:flex;align-items:center;gap:5px}.bm3d-legend i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.bm3d-notice{font-size:11px;color:#e4c58d;line-height:1.55;margin:8px 0}
+
+/* RC12 controls keep wrapping on narrow phone screens. */
+.bm3d-controls{display:flex;flex-wrap:wrap;gap:7px}.bm3d-controls label{cursor:pointer;max-width:100%}

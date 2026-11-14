@@ -1,0 +1,66 @@
+[
+  {
+    "file": "brain_mni.glb",
+    "bytes": 1958684,
+    "meshCount": 12,
+    "nodeCount": 12,
+    "meshNames": [
+      "amygdala",
+      "brainstem",
+      "cerebellum_cut",
+      "cingulate",
+      "corpus_callosum",
+      "frontal",
+      "hippocampus",
+      "insula",
+      "occipital",
+      "parietal",
+      "temporal",
+      "thalamus"
+    ],
+    "note": "노드·메시 수만 검사. 아틀라스 좌표 정합 또는 조직 형상 정확도를 보증하지 않음"
+  },
+  {
+    "file": "body_mni.glb",
+    "bytes": 4710900,
+    "meshCount": 7,
+    "nodeCount": 7,
+    "meshNames": [
+      "mesh_biceps_L",
+      "mesh_biceps_R",
+      "mesh_bones",
+      "mesh_cord",
+      "mesh_muscles_L",
+      "mesh_muscles_R",
+      "mesh_vertebrae"
+    ],
+    "note": "노드·메시 수만 검사. 아틀라스 좌표 정합 또는 조직 형상 정확도를 보증하지 않음"
+  },
+  {
+    "file": "heart_mni.glb",
+    "bytes": 3533696,
+    "meshCount": 6,
+    "nodeCount": 6,
+    "meshNames": [
+      "heart",
+      "cardiacvein",
+      "aorta",
+      "arteries",
+      "pulm",
+      "veins"
+    ],
+    "note": "노드·메시 수만 검사. 아틀라스 좌표 정합 또는 조직 형상 정확도를 보증하지 않음"
+  },
+  {
+    "file": "lungs_mni.glb",
+    "bytes": 1702228,
+    "meshCount": 3,
+    "nodeCount": 3,
+    "meshNames": [
+      "",
+      "",
+      ""
+    ],
+    "note": "노드·메시 수만 검사. 아틀라스 좌표 정합 또는 조직 형상 정확도를 보증하지 않음"
+  }
+]
