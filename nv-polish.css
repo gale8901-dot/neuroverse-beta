@@ -141,3 +141,4 @@ body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=a
 .toolbar{transform:scale(.78);transform-origin:bottom right}
 .notice,body.nv-bigInfo .notice{font-size:9px!important;line-height:1.35!important;padding:3px 6px!important;opacity:.75;max-width:55%!important}
 }
+#nv-fs{position:fixed;right:8px;bottom:8px;z-index:60;font-size:11px;padding:6px 10px;border-radius:999px;border:1px solid #3d5977;background:#10253a;color:#cfe8ff;opacity:.9}
