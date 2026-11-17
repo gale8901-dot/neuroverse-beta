@@ -86,3 +86,12 @@ body.nv-bigInfo .stage{flex-basis:14svh!important;min-height:90px!important}
 body.nv-bigInfo .notice{display:none!important}
 }
 @media(max-width:850px){.side{flex:1 1 0!important;height:auto!important;min-height:0}}
+@media(max-width:850px){
+body.nv-bigInfo .stage{flex-basis:22svh!important;min-height:130px!important}
+body.nv-bigInfo .notice{display:block!important;font-size:8.5px!important;max-width:calc(100% - 20px)!important;left:8px!important;bottom:3px!important;background:rgba(5,12,22,.7)}
+body.nv-bigInfo #viewer-tools,body.nv-bigInfo .toolbar{display:none!important}
+body.nv-big3d .side{flex:0 0 auto!important;height:auto!important}
+body.nv-big3d .scroll{max-height:21svh}
+body.nv-big3d .stage{flex:1 1 auto!important}
+#nv-size-toggle{font-size:13px!important;padding:9px 14px!important;font-weight:600}
+}
