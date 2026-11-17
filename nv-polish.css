@@ -72,3 +72,4 @@ body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=a
 body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=academy],[data-tab=glossary],[data-tab=evidence],[data-tab=conceptmap],[data-tab=pt-systems])) .side{flex:1 1 100%!important;height:100svh!important}
 .stage{flex-basis:33svh!important}
 }
+@media(max-width:850px){body:has(.tabs button.active[data-tab=pathways]) .stage{flex-basis:52svh!important}}
