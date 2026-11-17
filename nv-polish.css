@@ -78,3 +78,11 @@ body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=a
 .stage{flex-basis:28svh!important;min-height:170px!important}
 #bm-search{display:none!important}
 }
+#nv-size-toggle{display:none}
+@media(max-width:850px){
+#nv-size-toggle{display:block;position:absolute;top:8px;left:8px;z-index:30;padding:7px 12px;font-size:12px;border-radius:999px;border:1px solid #4a6a86;background:rgba(10,20,34,.85);color:#e8f1fa}
+body.nv-big3d .stage{flex-basis:60svh!important}
+body.nv-bigInfo .stage{flex-basis:14svh!important;min-height:90px!important}
+body.nv-bigInfo .notice{display:none!important}
+}
+@media(max-width:850px){.side{flex:1 1 0!important;height:auto!important;min-height:0}}
