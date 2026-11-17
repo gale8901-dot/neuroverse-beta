@@ -126,3 +126,18 @@ body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=a
 .scroll .panel,.scroll .card,.scroll details{border-radius:12px}
 .scroll h2,.scroll h3{line-height:1.35;margin:0 0 6px}
 }
+/* v21 landscape: logo+tabs on ONE row, tiny overlays on 3D, more room for content */
+@media(orientation:landscape) and (max-height:520px){
+.side{display:grid!important;grid-template-columns:auto 1fr;grid-template-rows:auto minmax(0,1fr)}
+.side>*{grid-column:1/-1}
+.side>.head{grid-column:1;grid-row:1;padding:0 8px 0 12px!important;display:flex;align-items:center;border:0!important}
+.side>.tabs{grid-column:2;grid-row:1;overflow-x:auto;border-bottom:1px solid #1d3550}
+.side>.scroll{grid-row:2}
+.side>.nv50-extra-guide{display:none!important}
+.nv50-advanced-toggle{display:none!important}
+.tabs button,body.nv50-advanced .tabs button{padding:9px 9px!important;font-size:12px!important;white-space:nowrap}
+.scroll{padding:8px 12px 16px!important}
+#viewer-tools{transform:scale(.72);transform-origin:top left;top:6px!important;left:6px!important;right:auto!important}
+.toolbar{transform:scale(.78);transform-origin:bottom right}
+.notice,body.nv-bigInfo .notice{font-size:9px!important;line-height:1.35!important;padding:3px 6px!important;opacity:.75;max-width:55%!important}
+}
