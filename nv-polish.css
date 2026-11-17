@@ -50,3 +50,25 @@ body.nv50-advanced .tabs{flex-wrap:wrap!important;overflow:visible;padding:4px 1
 .scroll small,.scroll .academy-compact,.scroll .pt-kicker,.scroll .section-kicker,.scroll .pt-notice,.scroll .nv21-badge,.scroll .nv30-chip,.scroll .nv32-tag,.scroll .academy-pill,.scroll .nv21-warning,.scroll .nv29-disclaimer,.scroll .nv53-route-notice,.scroll p.en{font-size:12px!important}
 @media(max-width:800px){body.nv50-advanced .tabs{flex-wrap:nowrap!important;overflow-x:auto;padding:0 10px!important}.nv50-intro{display:none}}
 .logo::after{content:"BETA";margin-left:8px;padding:2px 7px;border:1px solid var(--accent);border-radius:99px;font-size:10px;letter-spacing:.08em;color:var(--accent);vertical-align:middle}
+/* phone: one glance. smaller 3D, bigger panel, chip rows instead of grids, long hints clamped (BP3D credit stays) */
+@media(max-width:850px){
+.stage{flex:0 0 36svh!important;min-height:200px!important}
+.topline{display:none!important}
+.notice{left:8px!important;bottom:6px!important;max-width:calc(100% - 150px)!important;font-size:9px!important;line-height:1.3!important;padding:4px 6px!important}
+.viewer-tools{top:8px!important;right:8px!important;bottom:auto!important;left:auto!important}
+.head{padding:6px 12px 2px!important}
+.scroll{padding:8px 12px 20px!important}
+.scroll .hint,.scroll .small{font-size:12px!important;line-height:1.5!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.scroll .label{margin:10px 0 6px;font-size:12.5px}
+.panel,.academy-card{padding:12px!important;margin:0 0 8px!important}
+#regions,.scroll .list{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;max-height:none!important;gap:6px;padding-bottom:4px;scrollbar-width:none}
+#regions button,.scroll .list button{flex:0 0 auto;white-space:nowrap;padding:8px 12px}
+#region-search,#nv53-layer-help,#anatomy .label{display:none!important}
+.nv51-status{font-size:11px!important;padding:2px 0 6px!important;margin-bottom:6px!important}
+}
+/* phone: tabs that are text-only get the whole screen; the 3D stage is hidden there */
+@media(max-width:850px){
+body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=academy],[data-tab=glossary],[data-tab=evidence],[data-tab=conceptmap],[data-tab=pt-systems])) .stage{display:none!important}
+body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=academy],[data-tab=glossary],[data-tab=evidence],[data-tab=conceptmap],[data-tab=pt-systems])) .side{flex:1 1 100%!important;height:100svh!important}
+.stage{flex-basis:33svh!important}
+}
