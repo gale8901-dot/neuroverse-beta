@@ -272,15 +272,15 @@ body:not(.nv50-advanced) #biomech #bm3d-notice{font-size:12px;line-height:1.6}
 /* Clear focus distinction, without replacing the original interface. */
 .tabs button:focus-visible,.actions button:focus-visible,.list button:focus-visible,input:focus-visible{outline:2px solid #b7e8ff;outline-offset:2px}
 @media(max-width:800px){
- .app{height:100dvh;height:100svh;overflow:hidden}
- .stage{min-height:190px;flex:0 0 min(39svh,350px)!important}
+ .app{height:100dvh;height:100dvh;overflow:hidden}
+ .stage{min-height:190px;flex:0 0 min(39dvh,350px)!important}
  .side{min-height:0;flex:1 1 auto!important}
  .scroll{min-height:0;overflow-y:auto!important;overscroll-behavior:contain}
  #biomech #bm-movements{max-height:172px}
  .topline{max-width:calc(100% - 125px)}
  .viewer-tools{max-width:90vw}@media(max-width:600px){.viewer-tools{top:auto!important;bottom:52px;right:8px!important}.viewer-tools-head>:not(button){display:none}.viewer-tools:has(#viewer-content[hidden]){background:none!important;border:0!important;box-shadow:none!important;padding:0!important}}
 }
-@media(max-height:550px) and (max-width:800px){.stage{flex-basis:32svh!important;min-height:130px}}
+@media(max-height:550px) and (max-width:800px){.stage{flex-basis:32dvh!important;min-height:130px}}
 </style><link rel="stylesheet" href="./route-study.css"><style id="nv51-product-focus">
 /* RC51 — Less chrome. The actual GLB renderer remains the visual priority. */
 :root{--rc51-fg:#edf4ff;--rc51-muted:#9ab0c7;--rc51-line:#273749;--rc51-accent:#a6dff3}
@@ -328,8 +328,8 @@ body:not(.nv50-advanced) #nv33-topology{display:none!important}
 .nv53-refrow{gap:5px!important}.nv53-refrow a{font-size:11px!important}
 /* Do not turn the entire viewer into a modal when selecting the brain. */
 @media(min-width:1000px){.app{grid-template-columns:286px minmax(0,1fr)!important}.stage{min-height:100dvh}}
-@media(max-width:850px){html,body{height:100%;overflow:hidden!important}.app{height:100dvh!important;height:100svh!important;display:flex!important;flex-direction:column!important}.stage{order:0!important;flex:0 0 49svh!important;min-height:210px!important}.side{order:1!important;height:auto!important;min-height:0!important;flex:1 1 auto!important;border-top:1px solid #31475b!important}.head{padding:7px 12px 4px!important}.head .logo{font-size:17px!important}.head .subtitle{display:none!important}.nv50-advanced-toggle{position:absolute!important;right:12px!important;top:6px!important;padding:7px!important}.tabs{padding:4px 8px 8px!important}.tabs button{padding:8px 10px!important;min-width:0!important;flex:1 0 auto!important;min-height:36px!important;font-size:11px!important}.scroll{min-height:0;overflow-y:auto!important;padding:11px 14px 24px!important}.topline{top:11px!important;left:12px!important}.topline strong{font-size:12px!important}.topline div{font-size:9px!important;max-width:210px}.toolbar{right:8px!important;bottom:8px!important}.toolbar button{padding:7px 8px!important;font-size:10px!important}#anatomy #regions{max-height:155px!important}.notice{font-size:9px!important;max-width:45%!important}}
-@media(max-height:600px) and (max-width:850px){.stage{flex-basis:39svh!important;min-height:150px!important}}
+@media(max-width:850px){html,body{height:100%;overflow:hidden!important}.app{height:100dvh!important;height:100dvh!important;display:flex!important;flex-direction:column!important}.stage{order:0!important;flex:0 0 49dvh!important;min-height:210px!important}.side{order:1!important;height:auto!important;min-height:0!important;flex:1 1 auto!important;border-top:1px solid #31475b!important}.head{padding:7px 12px 4px!important}.head .logo{font-size:17px!important}.head .subtitle{display:none!important}.nv50-advanced-toggle{position:absolute!important;right:12px!important;top:6px!important;padding:7px!important}.tabs{padding:4px 8px 8px!important}.tabs button{padding:8px 10px!important;min-width:0!important;flex:1 0 auto!important;min-height:36px!important;font-size:11px!important}.scroll{min-height:0;overflow-y:auto!important;padding:11px 14px 24px!important}.topline{top:11px!important;left:12px!important}.topline strong{font-size:12px!important}.topline div{font-size:9px!important;max-width:210px}.toolbar{right:8px!important;bottom:8px!important}.toolbar button{padding:7px 8px!important;font-size:10px!important}#anatomy #regions{max-height:155px!important}.notice{font-size:9px!important;max-width:45%!important}}
+@media(max-height:600px) and (max-width:850px){.stage{flex-basis:39dvh!important;min-height:150px!important}}
 </style><style id="nv52-3d-clarity">
 /* RC52 – stage remains primary; all labels contained in the sidebar rather than over the 3D model. */
 #nv52-stagebar[hidden]{display:none!important}
@@ -805,8 +805,8 @@ body.nv50-advanced #biomech .bm3d-controls{display:flex!important}
 .nv53-original-paths{padding:0 8px 8px}.nv53-original-paths summary{padding:10px 5px}
 .nv53-original-paths .panel{padding:10px;font-size:11px}.nv53-original-paths .path-journey{padding:9px!important}.nv53-original-paths .path-journey h3{font-size:13px}.nv53-original-paths #path-list{max-height:120px;overflow:auto}.nv53-original-paths #path-info{max-height:160px;overflow:auto}
 .nv53-original-paths .path-journey-stations{max-height:160px;overflow:auto}
-@media(max-width:850px){.app{display:flex!important;flex-direction:column!important;height:100svh!important}.stage{flex:1 1 53svh!important;min-height:230px!important}.side{flex:0 0 47svh!important;min-height:0!important;height:auto!important;border-top:1px solid #2c4053}.head{padding:7px 14px 1px!important}.logo{font-size:17px!important}.subtitle{display:none!important}.nv50-advanced-toggle{position:absolute;right:14px;top:8px;margin:0!important}.tabs{padding:4px 10px 7px!important}.tabs button{padding:7px!important}.scroll{padding:8px 13px 22px!important}#regions{max-height:115px!important}.nv53-layer-tools button{padding:7px 4px}.nv50-intro p{display:none}.topline{top:10px!important;left:12px!important}}
-@media(max-width:390px){.tabs button{font-size:10px!important;padding:6px 4px!important}.stage{flex-basis:50svh!important}.side{flex-basis:50svh!important}}
+@media(max-width:850px){.app{display:flex!important;flex-direction:column!important;height:100dvh!important}.stage{flex:1 1 53dvh!important;min-height:230px!important}.side{flex:0 0 47dvh!important;min-height:0!important;height:auto!important;border-top:1px solid #2c4053}.head{padding:7px 14px 1px!important}.logo{font-size:17px!important}.subtitle{display:none!important}.nv50-advanced-toggle{position:absolute;right:14px;top:8px;margin:0!important}.tabs{padding:4px 10px 7px!important}.tabs button{padding:7px!important}.scroll{padding:8px 13px 22px!important}#regions{max-height:115px!important}.nv53-layer-tools button{padding:7px 4px}.nv50-intro p{display:none}.topline{top:10px!important;left:12px!important}}
+@media(max-width:390px){.tabs button{font-size:10px!important;padding:6px 4px!important}.stage{flex-basis:50dvh!important}.side{flex-basis:50dvh!important}}
 </style>
 <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 <style>.xp ul{margin:4px 0 8px;padding-left:18px}.xp li{margin:3px 0;line-height:1.55}.xp-hurt{margin:8px 0;padding:8px 10px;border-left:3px solid #f0a0ac;background:rgba(240,160,172,.12);line-height:1.55}.xp-hurt b,.xp-terms b{display:block;font-size:12px;margin-bottom:3px;opacity:.85}.xp-terms{margin-top:8px;padding-top:6px;border-top:1px dashed rgba(150,170,210,.4);font-size:.92em}.xp-terms em{font-style:normal;font-weight:700}</style>
@@ -3118,4 +3118,4 @@ toggle.addEventListener('click',()=>{
  // Initial text is available before the deferred 3D module starts.
  update({route:currentRoute,index:0});
 })();
-</script><script>(()=>{const s=document.querySelector('.stage');if(!s)return;const b=document.createElement('button');b.type='button';b.id='nv-size-toggle';let v=0;const ap=()=>{document.body.classList.toggle('nv-big3d',v==1);document.body.classList.toggle('nv-bigInfo',v==0);b.textContent=v?'📖 정보 보기':'🧠 3D 크게 보기';dispatchEvent(new Event('resize'))};b.onclick=()=>{v=1-v;ap()};ap();s.appendChild(b)})()</script><link rel="stylesheet" href="./nv-polish.css?v=18"></body></html>
+</script><script>(()=>{const s=document.querySelector('.stage');if(!s)return;const b=document.createElement('button');b.type='button';b.id='nv-size-toggle';let v=0;const ap=()=>{document.body.classList.toggle('nv-big3d',v==1);document.body.classList.toggle('nv-bigInfo',v==0);b.textContent=v?'📖 정보 보기':'🧠 3D 크게 보기';dispatchEvent(new Event('resize'))};b.onclick=()=>{v=1-v;ap()};ap();s.appendChild(b)})()</script><link rel="stylesheet" href="./nv-polish.css?v=20"></body></html>
