@@ -147,3 +147,5 @@ body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=a
 #bm-svg svg{min-width:640px}
 .bm-cap{margin:6px 0 2px;padding:8px 10px;border-left:3px solid #ffd84a;background:#1b2a3a;border-radius:6px;font-size:12.5px;line-height:1.5;color:#dbe8f5;position:sticky;left:0}
 .bm-cap b{color:#ffd84a}
+.bm-mus{margin:8px 0;padding:10px 12px;background:#14283b;border:1px solid #2e5070;border-radius:10px;font-size:13px;line-height:1.55;color:#dbe8f5}
+.bm-mus>div{margin-top:6px}.bm-mus span{color:#7fe0c4;font-weight:700}.bm-mus small{display:block;margin-top:6px;color:#8fa6bb;font-size:11px}
