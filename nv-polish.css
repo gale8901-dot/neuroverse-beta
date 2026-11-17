@@ -106,3 +106,15 @@ body.nv-big3d .stage{flex:1 1 auto!important}
 #viewer-tools,.toolbar,body.nv-bigInfo #viewer-tools,body.nv-bigInfo .toolbar{display:revert!important}
 body:has(.tabs button.active:is([data-tab=quiz],[data-tab=pt-course],[data-tab=academy],[data-tab=glossary],[data-tab=evidence],[data-tab=conceptmap],[data-tab=pt-systems])) .side{flex:1 1 100%!important}
 }
+/* landscape: slimmer header/tabs so the info side keeps its height */
+@media(orientation:landscape) and (max-height:520px){
+.head{padding:4px 10px 0!important}
+.logo{font-size:17px!important}
+.logo::after{font-size:9px!important;padding:2px 6px!important}
+.nv50-advanced-toggle{padding:5px 10px!important;font-size:11px!important}
+.tabs button,body.nv50-advanced .tabs button{padding:7px 8px!important;font-size:12.5px!important}
+.scroll{padding:6px 10px 14px!important}
+.stage .topline{display:none!important}
+}
+.side>.head,.side>.tabs,.side>.nv50-extra-guide{flex-shrink:0!important}
+@media(orientation:landscape) and (max-height:520px){.nv50-intro,.side>.foot,.subtitle{display:none!important}}
